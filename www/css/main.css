@@ -31,7 +31,7 @@ html, body {
 }
 #head_menu, #head_order, #head_title{
     width: 25%;
-    height: 80px;
+    height: 100px;
 }
 #head_menu{
     float: left;
@@ -51,4 +51,8 @@ html, body {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #fab51a;
+}
+#main_call{
+    width: 10%;
+    margin-left: 80%;
 }

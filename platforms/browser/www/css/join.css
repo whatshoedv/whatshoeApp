@@ -31,9 +31,9 @@ html, body {
     background-image: url(../images/join_logo.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: auto 110px;
+    background-size: auto 200px;
     padding: 0;
-    height: 110px;
+    height: 200px;
     text-indent: -9999px;
     overflow: hidden;
     display: block;
@@ -110,4 +110,19 @@ input {
     width: 30px;
     height: 30px;
     margin-left: 50%;
+}
+#gender_girl:hover{
+    background-image: url("../images/join_sex_woman_press.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gender_none:hover{
+    background-image: url("../images/join_sex_no_press.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gender_man:hover{
+    background-image: url("../images/join_sex_man_press.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
