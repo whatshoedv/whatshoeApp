@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/join.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="cordova.js"></script>
+    <div class="phone-wrapper">
+        <div class="phone-body">
+            <div class="join">
+                <div class="row">
+                    <div id="logo">
+                        <a tabindex="-1" title="title">왓슈</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <form id="join_form" method="post">
+                        <div class="row_input">
+                            <input name="join_id" id="join_id" type="text" placeholder="ID(4자 이상)">
+                        </div>
+                        <div class="row_input">
+                            <input name="join_name" id="join_name" type="text" placeholder="이름">
+                        </div>
+                        <div class="row_input">
+                            <input name="join_id" id="join_pw" type="password" placeholder="비밀번호(8자 이상)">
+                        </div>
+                        <div class="row_input">
+                            <input name="join_pw1" id="join_pw1" type="password" placeholder="비밀번호 확인(비밀번호와 동일)">
+                        </div>
+                        <h5>성별(선택)</h5>
+                        <div class="row_gender">
+                            <img id="gender_man" src="../images/join_sex_man.png"/>
+                            <img id="gender_girl" src="../images/join_sex_woman.png"/>
+                            <img id="gender_none" src="../images/join_sex_no.png"/>
+                        </div>
+                        <div class="row_input">
+                            <input name="join_birth" id="join_birth" type="text" placeholder="생년월일(ex-930321)">
+                        </div>
+                        <div class="row_input">
+                            <input name="join_mail" id="join_mail" type="text" placeholder="이메일 주소">
+                        </div>
+                    </form>
+                    <div class="row_check">
+                        <h5 style="display: inline-block;">이용약관</h5>
+                        <img id="join_CheckAgree" src="images/join_agree.png"/>
+                    </div>
+                    <div class="row_check">
+                        <h5 style="display: inline-block;">개인정보 취급방침</h5>
+                        <img id="join_InfoAgree" src="images/join_agree.png"/>
+                    </div>
+                </div>
+                <div id="join_btn">가입하기</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
