@@ -2,6 +2,7 @@
  * Created by byeongkwan on 2017-02-09.
  */
 
+//성별 하나만 클릭할 수 있도록 설정
 $('#gender_man').click(function (){
     document.getElementById('join_gender').value = "man";
     var man = document.getElementById('gender_man');
@@ -69,30 +70,21 @@ $('#join_btn').click(function () {
     var email = document.getElementById('join_mail').value;
     var gender = document.getElementById('join_gender').value;
 
+    //회원가입 요소 유효 체크
     if(!valid_Idcheck(id)){
 
-    } else {
-        if(!valid_NameCheck(name)){
+    } else if(!valid_NameCheck(name)){
 
-        } else {
-            if(!valid_PwCheck(pw,pw_more)){
+        } else if(!valid_PwCheck(pw,pw_more)){
 
-            } else {
-                if(!valid_GenderCheck(gender)){
+            } else if(!valid_GenderCheck(gender)){
 
-                } else {
-                    if(!valid_BirthCheck(birth)) {
+                } else if(!valid_BirthCheck(birth)) {
 
-                    } else {
-                        if(!valid_EmailCheck(email)){
+                    } else if(!valid_EmailCheck(email)){
 
                         } else {
                             location.href="main.html"
                             //document.getElementById('join_form').submit();
                         }
-                    }
-                }
-            }
-        }
-    }
 });

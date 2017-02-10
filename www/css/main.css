@@ -56,3 +56,70 @@ html, body {
     width: 10%;
     margin-left: 80%;
 }
+#modal_woman,#modal_man,#modal_bag,#modal_belt,#modal_wallet,#modal_preman,#modal_prewoman {
+    display:none;
+    background-color:#FFFFFF;
+    position:absolute;
+    top:300px;
+    left:200px;
+    padding:10px;
+    border:2px solid #E2E2E2;
+    z-Index:9999;
+    text-align: center;
+}
+#item_woman_shoes, #item_man_shoes, #item_preman_shoes, #item_prewoman_shoes, #item_bag_service, #item_belt_service, #item_wallet_service{
+    height: 300px;
+    width: 400px;
+    vertical-align: middle;
+}
+.row_item{
+    width: 100%;
+    background-color: #949494;
+    color: white;
+}
+.row_item_sum{
+    background-color: #eaeaea;
+}
+#item_woman_item1,#item_woman_item2,#item_woman_item3,#item_woman_item4,#item_woman_item5,#item_woman_item6,#item_woman_item7,#item_woman_item8,#item_woman_item9,#item_woman_item10,#item_woman_item11, #item_woman_item12, #item_woman_item13, #item_woman_item14{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+#item_man_item1,#item_man_item2,#item_man_item3,#item_man_item4,#item_man_item5,#item_man_item6,#item_man_item7,#item_man_item8,#item_man_item9,#item_man_item10,#item_man_item11, #item_man_item12, #item_man_item13, #item_man_item14{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+#item_prewoman_item1,#item_prewoman_item2,#item_prewoman_item3,#item_prewoman_item4,#item_prewoman_item5,#item_prewoman_item6,#item_prewoman_item7,#item_prewoman_item8,#item_prewoman_item9,#item_prewoman_item10,#item_prewoman_item11, #item_prewoman_item12, #item_prewoman_item13, #item_prewoman_item14, #item_prewoman_item15, #item_prewoman_item16, #item_prewoman_item17, #item_prewoman_item18, #item_prewoman_item19, #item_prewoman_item20, #item_prewoman_item21, #item_prewoman_item22, #item_prewoman_item23, #item_prewoman_item24, #item_prewoman_item25, #item_prewoman_item26{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+#item_preman_item1,#item_preman_item2,#item_preman_item3,#item_preman_item4,#item_preman_item5,#item_preman_item6,#item_preman_item7,#item_preman_item8,#item_preman_item9,#item_preman_item10,#item_preman_item11, #item_preman_item12, #item_preman_item13, #item_preman_item14, #item_preman_item15, #item_preman_item16{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+#item_preman_item1,#item_preman_item2,#item_preman_item3,#item_preman_item4,#item_preman_item5,#item_preman_item6,#item_preman_item7,#item_preman_item8,#item_preman_item9,#item_preman_item10,#item_preman_item11, #item_preman_item12, #item_preman_item13, #item_preman_item14, #item_preman_item15, #item_preman_item16{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+#item_bag_item1,#item_bag_item2,#item_bag_item3,#item_bag_item4,#item_bag_item5,#item_bag_item6,#item_bag_item7,#item_bag_item8,#item_bag_item9,#item_bag_item10,#item_bag_item11, #item_bag_item12{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+#item_belt_item1,#item_belt_item2,#item_belt_item3,#item_belt_item4,#item_belt_item5,#item_belt_item6,#item_belt_item7,#item_belt_item8{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+#item_wallet_item1,#item_wallet_item2,#item_wallet_item3,#item_wallet_item4,#item_wallet_item5,#item_wallet_item6,#item_wallet_item7,#item_wallet_item8,#item_wallet_item9,#item_wallet_item10,#item_wallet_item11, #item_wallet_item12{
+    width: 45%;
+    display: inline-block;
+    border: 1px solid #252525;
+}
+.item_woman_item, .item_man_item, .item_preman_item, .item_prewoman_item, .item_bag_item, .item_belt_item, .item_wallet_item{
+    cursor: pointer;
+}
