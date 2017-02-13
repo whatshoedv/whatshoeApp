@@ -1,15 +1,17 @@
 /**
  * Created by byeongkwan on 2017-02-10.
  */
-
+localStorage.premanCost = 0;
 $('#item_preman_item1').click(function () {
     var item_row = document.getElementById('item_preman_item1');
     if (document.getElementById('item_preman_input1').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input1').value = 'on';
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input1').value = 'NULL';
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item2').click(function () {
@@ -17,9 +19,13 @@ $('#item_preman_item2').click(function () {
     if (document.getElementById('item_preman_input2').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input2').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost2').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input2').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost2').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item3').click(function () {
@@ -27,9 +33,13 @@ $('#item_preman_item3').click(function () {
     if (document.getElementById('item_preman_input3').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input3').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost3').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.manCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input3').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost3').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item4').click(function () {
@@ -37,9 +47,13 @@ $('#item_preman_item4').click(function () {
     if (document.getElementById('item_preman_input4').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input4').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost4').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input4').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost4').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item5').click(function () {
@@ -47,9 +61,13 @@ $('#item_preman_item5').click(function () {
     if (document.getElementById('item_preman_input5').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input5').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost5').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input5').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost5').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item6').click(function () {
@@ -57,9 +75,13 @@ $('#item_preman_item6').click(function () {
     if (document.getElementById('item_preman_input6').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input6').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost6').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input6').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost6').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item7').click(function () {
@@ -67,9 +89,13 @@ $('#item_preman_item7').click(function () {
     if (document.getElementById('item_preman_input7').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input7').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost7').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input7').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost7').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item8').click(function () {
@@ -77,9 +103,13 @@ $('#item_preman_item8').click(function () {
     if (document.getElementById('item_preman_input8').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input8').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost8').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input8').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost8').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item9').click(function () {
@@ -87,9 +117,13 @@ $('#item_preman_item9').click(function () {
     if (document.getElementById('item_preman_input9').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input9').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost9').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input9').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost9').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item10').click(function () {
@@ -97,9 +131,13 @@ $('#item_preman_item10').click(function () {
     if (document.getElementById('item_preman_input10').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input10').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost10').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input10').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost10').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item11').click(function () {
@@ -107,9 +145,13 @@ $('#item_preman_item11').click(function () {
     if (document.getElementById('item_preman_input11').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input11').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost11').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input11').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost11').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item12').click(function () {
@@ -117,9 +159,13 @@ $('#item_preman_item12').click(function () {
     if (document.getElementById('item_preman_input12').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input12').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost12').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input12').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost12').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item13').click(function () {
@@ -127,9 +173,13 @@ $('#item_preman_item13').click(function () {
     if (document.getElementById('item_preman_input13').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input13').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost13').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input13').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost13').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item14').click(function () {
@@ -137,9 +187,13 @@ $('#item_preman_item14').click(function () {
     if (document.getElementById('item_preman_input14').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input14').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost14').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input14').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost14').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item15').click(function () {
@@ -147,9 +201,13 @@ $('#item_preman_item15').click(function () {
     if (document.getElementById('item_preman_input15').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input15').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost15').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input15').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost15').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 $('#item_preman_item16').click(function () {
@@ -157,9 +215,13 @@ $('#item_preman_item16').click(function () {
     if (document.getElementById('item_preman_input16').value == 'NULL') {
         item_row.style.backgroundColor = "#f5f5f5";
         document.getElementById('item_preman_input16').value = 'on';
+        localStorage.premanCost = parseInt(localStorage.premanCost) + parseInt(document.getElementById('item_preman_cost16').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     } else {
         item_row.style.backgroundColor = "#ffffff";
         document.getElementById('item_preman_input16').value = 'NULL';
+        localStorage.premanCost = parseInt(localStorage.premanCost) - parseInt(document.getElementById('item_preman_cost16').value);
+        document.getElementById('item_preman_cost').textContent = localStorage.premanCost+"원";
     }
 });
 
