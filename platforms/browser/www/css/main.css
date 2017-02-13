@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     background:#DEDEDE;
+    overflow-x: hidden;
 }
 .phone-wrapper {
     width: 100%;
@@ -123,3 +124,16 @@ html, body {
 .item_woman_item, .item_man_item, .item_preman_item, .item_prewoman_item, .item_bag_item, .item_belt_item, .item_wallet_item{
     cursor: pointer;
 }
+
+.sidebar {
+    background-color: #312f2f; }
+.sidebar li + li {
+    margin-top: 12px; }
+.sidebar li a {
+    padding: 4px 10px;
+    display: block;
+    color: #cecece; }
+.sidebar li a:hover {
+    background-color: #424242; }
+.sidebar li .current {
+    background-color: #51648b; }

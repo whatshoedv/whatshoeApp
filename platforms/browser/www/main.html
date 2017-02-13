@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lib/fontello.css" />
+    <link rel="stylesheet" href="css/lib/normalize.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
+    <script src="js/lib/html5shiv.js"></script>
 </head>
 <body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
-    <div class="phone-wrapper">
-        <div class="phone-body">
-            <div class="main">
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/sidebar.js"></script>
+
+
+<nav class="sidebar jsc-sidebar" id="jsi-nav" data-sidebar-options="">
+    <ul class="sidebar-list">
+        <li><a href="./" class="current">SidebarJS</a></li>
+        <li><a href="http://github.com/makotot/sidebar/">View on Github</a></li>
+        <li><a href="http://github.com/makotot/sidebar/releases">Download</a></li>
+    </ul>
+</nav>
+    <div class="phone-wrapper wrapper jsc-sidebar-content jsc-sidebar-pulled">
+        <div class="phone-body ">
+            <div class="main ">
                 <div class="head">
-                    <img id="head_menu" src="images/menu.png"/>
+                    <nav>
+                        <img class="icon-menu link-menu jsc-sidebar-trigger" id="head_menu" src="images/menu.png"/>
+                    </nav>
                     <img id="head_title" src="images/main_title.png"/>
                     <img id="head_order" src="images/main_myshoe.png"/>
                 </div>
+                <script>
+                    $('#jsi-nav').sidebar({
+                        trigger: '.jsc-sidebar-trigger',
+                        scrollbarDisplay: true,
+                        pullCb: function () { console.log('pull'); },
+                        pushCb: function () { console.log('push'); }
+                    });
+                </script>
                 <div class="item_list">
                     <div class="row">
                         <img id="item_girl" src="images/servicepage_woman.png"/>
