@@ -10,11 +10,11 @@ html, body {
     height: 100%;
     max-width: 700px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     min-height: 100%;
 }
 .phone-body {
-    position: relative;
+    position: absolute;
     height: 100%;
     width: 100%;
     background-color: #211813;
@@ -121,9 +121,7 @@ html, body {
     display: inline-block;
     border: 1px solid #252525;
 }
-.item_woman_item, .item_man_item, .item_preman_item, .item_prewoman_item, .item_bag_item, .item_belt_item, .item_wallet_item{
-    cursor: pointer;
-}
+
 
 .sidebar {
     background-color: #312f2f; }

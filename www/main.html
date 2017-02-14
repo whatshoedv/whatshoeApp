@@ -4,45 +4,62 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/lib/fontello.css" />
-    <link rel="stylesheet" href="css/lib/normalize.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
+    <link type="text/css" rel="stylesheet" href="css/main_sidebar.css" />
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
-    <script src="js/lib/html5shiv.js"></script>
 </head>
 <body>
+
+<!--------슬라이드 메뉴 --------->
+<div id="sidebar" style="position: fixed; display: inline-block; height: 100%; width: 80%; left: -80%; background-color: #ffffff; transition: all 0.5s ease-in-out; z-index: 1;">
+    <div class="sidebar_head">
+        <div class="row">
+            <img src="images/cancle.png" id="main_cancel"/>
+        </div>
+        <div class="row">
+            <a>병관</a>
+        </div>
+    </div>
+    <div class="sidebar_body">
+        <div class="sidebar_row">
+            <img id="side_mypage" src="images/nav_mypage.png"/>
+            <img id="side_point" src="images/nav_point.png"/>
+            <img id="side_coupon" src="images/nav_coupon.png"/>
+            <img id="side_list" src="images/nav_list.png"/>
+        </div>
+        <div class="sidebar_row">
+            <a id="side_mypage_text">나의 정보</a>
+            <a id="side_point_text">포인트</a>
+            <a id="side_coupon_text">쿠 폰</a>
+            <a id="side_list_text">주문 내역</a>
+        </div>
+        <div class="row">
+            <img id="side_share" src="images/nav_share.png"/>
+            <a id="side_share_text">친구초대</a>
+        </div>
+        <div class="row">
+            <img id="side_notice" src="images/nav_notice.png"/>
+            <a id="side_notice_text">공지사항</a>
+        </div>
+        <div class="row">
+            <img id="side_call" src="images/nav_call.png"/>
+            <a id="side_call_text">고객센터</a>
+        </div>
+
+    </div>
+</div>
+
+<!--------------메인 바디-------------->
 <script type="text/javascript" src="cordova.js"></script>
-<script src="js/lib/jquery.min.js"></script>
-<script src="js/sidebar.js"></script>
-
-
-<nav class="sidebar jsc-sidebar" id="jsi-nav" data-sidebar-options="">
-    <ul class="sidebar-list">
-        <li><a href="./" class="current">SidebarJS</a></li>
-        <li><a href="http://github.com/makotot/sidebar/">View on Github</a></li>
-        <li><a href="http://github.com/makotot/sidebar/releases">Download</a></li>
-    </ul>
-</nav>
-    <div class="phone-wrapper wrapper jsc-sidebar-content jsc-sidebar-pulled">
+    <div class="phone-wrapper">
         <div class="phone-body ">
             <div class="main ">
                 <div class="head">
-                    <nav>
-                        <img class="icon-menu link-menu jsc-sidebar-trigger" id="head_menu" src="images/menu.png"/>
-                    </nav>
+                    <img id="head_menu" src="images/menu.png"/>
                     <img id="head_title" src="images/main_title.png"/>
                     <img id="head_order" src="images/main_myshoe.png"/>
                 </div>
-                <script>
-                    $('#jsi-nav').sidebar({
-                        trigger: '.jsc-sidebar-trigger',
-                        scrollbarDisplay: true,
-                        pullCb: function () { console.log('pull'); },
-                        pushCb: function () { console.log('push'); }
-                    });
-                </script>
                 <div class="item_list">
                     <div class="row">
                         <img id="item_girl" src="images/servicepage_woman.png"/>
@@ -606,6 +623,7 @@
         <button class="js_close">닫기</button>
     </div>
 <script type="text/javascript" src="js/main_bag_item.js"></script>
+
 <!--------명품 벨트 수선 modal --------->
     <div id="modal_belt">
         <h4>명품 벨트 수선</h4>
@@ -664,6 +682,7 @@
         <button class="js_close">닫기</button>
     </div>
 <script type="text/javascript" src="js/main_belt_item.js"></script>
+
 <!--------명품 지갑 수선 modal --------->
     <div id="modal_wallet">
         <h4>명품 지갑 수선</h4>
@@ -726,7 +745,9 @@
     <div id="etc">
 
     </div>
+<script type="text/javascript" src="js/main_slidebar.js"></script>
 <script type="text/javascript" src="js/main_item.js"></script>
 <script type="text/javascript" src="js/main_modal.js"></script>
+<script type="text/javascript" src="js/main_move.js"></script>
 </body>
 </html>

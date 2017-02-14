@@ -1,9 +1,10 @@
 /**
  * Created by byeongkwan on 2017-02-10.
  */
-window.localStorage.PixItem="";
+window.localStorage.PixItem=""; //어떤 항목 인지 토큰저장 초기화
 
 var PixItem;
+//각 항목을 클릭하게 되면 #10부터 각 고유 코드가 쌓이게 된다.
 $('#confirm_woman_button').click(function(){
     var PixItem = window.localStorage.PixItem;
     for(var i=1;i<=13;i++){
@@ -66,7 +67,7 @@ $('#confirm_preman_button').click(function(){
     }
     window.localStorage.PixItem = PixItem;
     alert(window.localStorage.PixItem);
-    Modal_Preman.hide();
+    Modal_PreMan.hide();
 });
 $('#confirm_bag_button').click(function(){
     var PixItem = window.localStorage.PixItem;

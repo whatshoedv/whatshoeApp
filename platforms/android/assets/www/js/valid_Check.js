@@ -12,7 +12,7 @@ function valid_Idcheck(valid_id){
         } else {
         return true;
         }
-}
+}   //아이디 유효성 체크
 
 function valid_PwCheck(valid_pw, valid_pw_more) {
     var pw = valid_pw;
@@ -29,7 +29,7 @@ function valid_PwCheck(valid_pw, valid_pw_more) {
     } else {
         return true;
     }
-}
+}   //비밀번호 유효성 체크
 
 function valid_NameCheck(valid_name) {
     var name = valid_name;
@@ -39,7 +39,7 @@ function valid_NameCheck(valid_name) {
     } else {
         return true;
     }
-}
+}   //이름 유효성 체크
 function valid_GenderCheck(valid_gender){
     var gender = valid_gender;
     if(gender == "NULL"){
@@ -48,7 +48,7 @@ function valid_GenderCheck(valid_gender){
     } else {
         return true;
     }
-}
+}       //성별 유효성 체크
 
 function valid_BirthCheck(valid_birth){
     var birth = valid_birth;
@@ -61,7 +61,7 @@ function valid_BirthCheck(valid_birth){
     } else {
         return true;
     }
-}
+}       //생년월일 유효성 체크
 
 function valid_EmailCheck(valid_email){
     var email = valid_email;
@@ -74,4 +74,4 @@ function valid_EmailCheck(valid_email){
     } else {
         return true;
     }
-}
+}       //이메일 유효성 체크
