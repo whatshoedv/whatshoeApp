@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:#DEDEDE;
+}
+.phone-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+}
+.phone-body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: table;
+}
+.coupon_head{
+    background-color: #211813;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#coupon_head_back{
+    height: 40px;
+
+}
+#coupon_head_title{
+    color: #ffffff;
+    font-size: 40px;
+
+}
+.coupon_body{
+    text-align: center;
+    padding-top: 20%;
+    height: 100%;
+}
+#coupon_nothing_img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 15%;
+}
+#coupon_register{
+    background-color: #f25a45 ;
+    width: 30%;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom:0px;
+    padding-top: 3%;
+}

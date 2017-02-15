@@ -19,7 +19,10 @@ $('#side_share').click(function(){
     location.href = 'main_share.html';
 });
 $('#side_notice').click(function(){
-    location.href = 'main_notice.html';
+    location.href = 'https://m.facebook.com/whatshoeman';
+});
+$('#side_call').click(function () {
+   location.href="http://plus.kakao.com/home/%40whatshoe";
 });
 
 //픽업위치  이동 스크립트
