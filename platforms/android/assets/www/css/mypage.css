@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:#DEDEDE;
+}
+.phone-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+}
+.phone-body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #d7d7d7;
+    display: table;
+}
+.mypage_head{
+    background-color: #211813;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#mypage_head_back{
+    height: 40px;
+}
+#mypage_head_title{
+    color: #ffffff;
+    font-size: 40px;
+}
+.mypage_body1{
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+.mypage_body_row{
+    margin-bottom:20px;
+    width: 100%;
+}
+#mypage_body_img{
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+#mypage_footsizeInput{
+    margin-left: 20px;
+}
+#mypage_usa_input, #mypage_uk_input,#mypage_eu_input{
+    border: none;
+    border-bottom: 1px solid #252525;
+    width: 50px;
+    margin-left: 20px;
+}
+#mypage_uk_size{
+    margin-left: 20px;
+}
+#mypage_baby_info{
+    margin-left: 50px;
+    font-style: oblique;
+}
+#mypage_footsizeInput{
+    width: 50px;
+}
+#mypage_sizeRegister{
+    border :2px solid #f25a45;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px
+}
+.mypage_body2{
+    text-align: center;
+    background-color: #ffffff;
+    height:300px;
+}
+#mypage_myId_input, #mypage_myName_input, #mypage_pw_input, #mypage_birth_input, #mypage_mail_input, #mypage_phone_input{
+    width: 150px;
+    margin-left: 50px;
+}
+#mypage_man_chk, #mypage_woman_chk{
+    display: inline-block;
+}
+#mypage_save{
+    border :2px solid #f25a45;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#modal_child {
+    width: 90%;
+    height: 80%;
+    display:none;
+    background-color:#FFFFFF;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 10px;
+    z-Index:9999;
+}
+#mypage_child_cancel{
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+#mypage_child_modal{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+}

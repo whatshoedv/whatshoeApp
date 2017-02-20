@@ -9,7 +9,29 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        },
+        "cordova-plugin-velda-devicefeedback": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        }
+    }
 }

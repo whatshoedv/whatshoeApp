@@ -3,8 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/mypage.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 <body>
-    <a>내정보페이지</a>
+<script type="text/javascript" src="cordova.js"></script>
+<div class="phone-wrapper">
+    <div class="phone-body">
+        <form id="mypage_form" method="post">
+            <div class="mypage_head">
+                <img id="mypage_head_back" src="images/prev_btn.png"/>
+                <span id="mypage_head_title">마이 페이지</span>
+            </div>
+            <div class="mypage_body1">
+                <div class="mypage_body_row">
+                    <img id="mypage_body_img" src="images/mypage_lv1.png">
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_level">LV 1. 베이비 슈</span>
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_myfootSize">나의 발 사이즈</span>
+                    <input id="mypage_footsizeInput" type="text">
+                    <div id="mypage_sizeRegister">확인</div>
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_usa_size">미국 사이즈</span>
+                    <input id="mypage_usa_input" type="text">
+                    <span id="mypage_uk_size">영국 사이즈</span>
+                    <input id="mypage_uk_input" type="text">
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_eu_size">유럽 사이즈</span>
+                    <input id="mypage_eu_input" type="text">
+                    <span id="mypage_baby_info">유아용 신발 사이즈</span>
+                </div>
+            </div>
+            <div class="mypage_body2" style="overflow: scroll">
+                <div class="mypage_body_row">
+                    <span id="mypage_myId">아이디</span>
+                    <input id="mypage_myId_input" type="text">
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_myName">이름</span>
+                    <input id="mypage_myName_input" type="text">
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_pw">비밀번호</span>
+                    <input id="mypage_pw_input" type="password" placeholder="변경할 비밀번호(선택)">
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_birth">생년월일</span>
+                    <input id="mypage_birth_input" type="text">
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_mail">이메일</span>
+                    <input id="mypage_mail_input" type="email">
+                </div>
+                <div class="mypage_body_row">
+                    <span id="mypage_gender">성별</span>
+                    <input id="mypage_man_chk" name="mypage_gender_chk" type="radio" value="man">
+                    <label>남자</label>
+                    <input id="mypage_woman_chk"name="mypage_gender_chk" type="radio" value="woman">
+                    <label>여자</label>
+                </div>
+                    <div class="mypage_body_row">
+                        <span id="mypage_phone">핸드폰 번호</span>
+                        <input id="mypage_phone_input" type="text">
+                    </div>
+                    <div class="mypage_body_row">
+                        <div id="mypage_save">
+                            저장하기
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<div id="modal_child">
+    <img id="mypage_child_cancel" src="images/cancle.png">
+    <img id="mypage_child_modal" src="images/babysize.png">
+</div>
+<script type="text/javascript" src="js/valid_Check.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/main_mypage.js"></script>
 </body>
 </html>

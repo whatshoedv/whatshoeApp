@@ -42,7 +42,7 @@ function valid_NameCheck(valid_name) {
 }   //이름 유효성 체크
 function valid_GenderCheck(valid_gender){
     var gender = valid_gender;
-    if(gender == "NULL"){
+    if(gender == "NULL" || gender==undefined){
         alert("성별 선택점");
         return false;
     } else {
@@ -75,3 +75,16 @@ function valid_EmailCheck(valid_email){
         return true;
     }
 }       //이메일 유효성 체크
+
+function valid_PhoneCheck(valid_phone) {
+    var phone = valid_phone;
+    if(!phone){
+        alert("번호 입력이 안됬습니다");
+        return false;
+    } else if(!/^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/){
+        alert("형식이 잘못됬습니다.");
+        return false;
+    } else {
+        return true;
+    }
+}       //휴대폰 번호 유효성 체크

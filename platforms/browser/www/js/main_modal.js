@@ -46,3 +46,6 @@ $("#item_belt").click(function() {
 $("#item_wallet").click(function() {
     Modal_Wallet.show(); // 모달창 보여주기
 });
+$("#item_etc").click(function() {
+    location.href = "http://plus.kakao.com/home/%40whatshoe";
+});

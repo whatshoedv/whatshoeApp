@@ -58,3 +58,46 @@ html, body {
     bottom:0px;
     padding-top: 3%;
 }
+#modal_coupon {
+    width: 40%;
+    display:none;
+    background-color:#FFFFFF;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 10px;
+    z-Index:9999;
+}
+.modal_coupon_head{
+    height: 40px;
+    text-align: center;
+    background-color: #f25a45;
+    border-radius: 10px;
+    color: #ffffff;
+}
+#modal_coupon_cancelImg{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.modal_coupon_body{
+    text-align: center;
+}
+#modal_coupon_bodyText{
+    margin-top: 20px;
+}
+#modal_coupon_register{
+    width: 90%;
+    margin-top: 20px;
+}
+#modal_coupon_registerBTN{
+    background-color: #f25a45;
+    color: #ffffff;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right:auto;
+}
