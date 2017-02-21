@@ -75,8 +75,8 @@ input {
     margin-right: 25%;
 }
 #gender_girl, #gender_man, #gender_none {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -102,13 +102,13 @@ input {
     cursor: pointer;
 }
 #join_CheckAgree{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin-left: 50%;
 }
 #join_InfoAgree{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin-left: 50%;
 }
 #gender_girl:hover{

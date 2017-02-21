@@ -7,7 +7,7 @@ function valid_Idcheck(valid_id){
         alert("아이디가 입력되지 않았습니다.");
         return false;
     } else if((!/^[a-zA-Z0-9]{4,12}$/.test(Id))){
-            alert("영문 숫자 혼합 4자리 이상 입력");
+            alert("아이디 4자리 이상 입력");
             return false;
         } else {
         return true;

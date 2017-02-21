@@ -3,24 +3,28 @@
  */
 window.localStorage.PixItem=""; //어떤 항목 인지 토큰저장 초기화
 
+window.localStorage.womanPixItem = "";
+window.localStorage.manPixItem = "";
+window.localStorage.prewomanPixItem = "";
+window.localStorage.premanPixItem = "";
+window.localStorage.bagPixItem = "";
+window.localStorage.beltPixItem = "";
+window.localStorage.walletPixItem = "";
+
 var PixItem;
 var subjet = "서비스를 선택하면 간단한 설명을 보여드립니다.";
 
 //각 항목을 클릭하게 되면 #10부터 각 고유 코드가 쌓이게 된다.
 $('#confirm_woman_button').click(function(){
-    var PixItem = window.localStorage.PixItem;
+    var PixItem="";
     for(var i=1;i<=13;i++){
         if(document.getElementById('item_woman_input'+i).value == 'on'){
             var string = document.getElementById('item_woman_code'+i).value.toString();
-            if(PixItem ==undefined||PixItem=="")
-                PixItem = "#10"+string;
-            else if(PixItem != undefined){
                 PixItem += string;
-            }
         }
     }
-    window.localStorage.PixItem = PixItem;
-    alert(window.localStorage.PixItem);
+    window.localStorage.womanPixItem = PixItem;
+    alert(window.localStorage.womanPixItem);
     Modal_Woman.hide();
 });
 //닫기를 했을 때 클릭됬던 항목들 초기화
@@ -36,19 +40,15 @@ $('#woman_close').click(function () {
 });
 
 $('#confirm_man_button').click(function(){
-    var PixItem = window.localStorage.PixItem;
+    var PixItem="";
     for(var i=1;i<=12;i++){
         if(document.getElementById('item_man_input'+i).value == 'on'){
             var string = document.getElementById('item_man_code'+i).value.toString();
-            if(PixItem ==undefined||PixItem=="")
-                PixItem = "#10"+string;
-            else if(PixItem != undefined){
                 PixItem += string;
-            }
         }
     }
-    window.localStorage.PixItem = PixItem;
-    alert(window.localStorage.PixItem);
+    window.localStorage.manPixItem = PixItem;
+    alert(window.localStorage.manPixItem);
     Modal_Man.hide();
 });
 $('#man_close').click(function () {
@@ -63,19 +63,15 @@ $('#man_close').click(function () {
 });
 
 $('#confirm_prewoman_button').click(function(){
-    var PixItem = window.localStorage.PixItem;
+    var PixItem="";
     for(var i=1;i<=25;i++){
         if(document.getElementById('item_prewoman_input'+i).value == 'on'){
             var string = document.getElementById('item_prewoman_code'+i).value.toString();
-            if(PixItem ==undefined||PixItem=="")
-                PixItem = "#10"+string;
-            else if(PixItem != undefined){
                 PixItem += string;
-            }
         }
     }
-    window.localStorage.PixItem = PixItem;
-    alert(window.localStorage.PixItem);
+    window.localStorage.prewomanPixItem = PixItem;
+    alert(window.localStorage.prewomanPixItem);
     Modal_PreWoman.hide();
 });
 $('#prewoman_close').click(function () {
@@ -90,19 +86,15 @@ $('#prewoman_close').click(function () {
 });
 
 $('#confirm_preman_button').click(function(){
-    var PixItem = window.localStorage.PixItem;
+    var PixItem="";
     for(var i=1;i<=16;i++){
         if(document.getElementById('item_preman_input'+i).value == 'on'){
             var string = document.getElementById('item_preman_code'+i).value.toString();
-            if(PixItem ==undefined||PixItem=="")
-                PixItem = "#10"+string;
-            else if(PixItem != undefined){
                 PixItem += string;
-            }
         }
     }
-    window.localStorage.PixItem = PixItem;
-    alert(window.localStorage.PixItem);
+    window.localStorage.premanPixItem = PixItem;
+    alert(window.localStorage.premanPixItem);
     Modal_PreMan.hide();
 });
 $('#preman_close').click(function () {
@@ -117,19 +109,15 @@ $('#preman_close').click(function () {
 });
 
 $('#confirm_bag_button').click(function(){
-    var PixItem = window.localStorage.PixItem;
+    var PixItem="";
     for(var i=1;i<=12;i++){
         if(document.getElementById('item_bag_input'+i).value == 'on'){
             var string = document.getElementById('item_bag_code'+i).value.toString();
-            if(PixItem ==undefined||PixItem=="")
-                PixItem = "#10"+string;
-            else if(PixItem != undefined){
                 PixItem += string;
-            }
         }
     }
-    window.localStorage.PixItem = PixItem;
-    alert(window.localStorage.PixItem);
+    window.localStorage.bagPixItem = PixItem;
+    alert(window.localStorage.bagPixItem);
     Modal_Bag.hide();
 });
 $('#bag_close').click(function () {
@@ -144,19 +132,15 @@ $('#bag_close').click(function () {
 });
 
 $('#confirm_belt_button').click(function(){
-    var PixItem = window.localStorage.PixItem;
+    var PixItem = "";
     for(var i=1;i<=7;i++){
         if(document.getElementById('item_belt_input'+i).value == 'on'){
             var string = document.getElementById('item_belt_code'+i).value.toString();
-            if(PixItem ==undefined||PixItem=="")
-                PixItem = "#10"+string;
-            else if(PixItem != undefined){
                 PixItem += string;
-            }
         }
     }
-    window.localStorage.PixItem = PixItem;
-    alert(window.localStorage.PixItem);
+    window.localStorage.beltPixItem = PixItem;
+    alert(window.localStorage.beltPixItem);
     Modal_Belt.hide();
 });
 $('#belt_close').click(function () {
@@ -171,19 +155,15 @@ $('#belt_close').click(function () {
 });
 
 $('#confirm_wallet_button').click(function(){
-    var PixItem = window.localStorage.PixItem;
+    var PixItem="";
     for(var i=1;i<=9;i++){
         if(document.getElementById('item_wallet_input'+i).value == 'on'){
             var string = document.getElementById('item_wallet_code'+i).value.toString();
-            if(PixItem ==undefined||PixItem=="")
-                PixItem = "#10"+string;
-            else if(PixItem != undefined){
                 PixItem += string;
-            }
         }
     }
-    window.localStorage.PixItem = PixItem;
-    alert(window.localStorage.PixItem);
+    window.localStorage.walletPixItem = PixItem;
+    alert(window.localStorage.walletPixItem);
     Modal_Wallet.hide();
 });
 $('#wallet_close').click(function () {
