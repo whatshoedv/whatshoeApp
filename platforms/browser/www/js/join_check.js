@@ -84,7 +84,6 @@ $('#join_btn').click(function () {
                     } else if(!valid_EmailCheck(email)){
 
                         } else {
-                            location.href="main.html"
-                            //document.getElementById('join_form').submit();
+                            document.getElementById('join_form').submit();
                         }
 });

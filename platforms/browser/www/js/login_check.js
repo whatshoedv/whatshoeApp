@@ -10,6 +10,6 @@ $('#login_btn').click(function () {
    } else if(!valid_PwCheck(login_pw,login_pw)){
 
    } else {
-      location.href = "main.html";
+       document.getElementById('login_form').submit();
    }
 });

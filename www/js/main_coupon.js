@@ -18,3 +18,4 @@ $('#modal_coupon_registerBTN').click(function () {
     Modal_Coupon.hide();
 });
 //쿠폰번호 유효성체크
+Native

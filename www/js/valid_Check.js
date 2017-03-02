@@ -88,3 +88,16 @@ function valid_PhoneCheck(valid_phone) {
         return true;
     }
 }       //휴대폰 번호 유효성 체크
+
+function  valid_FootSize(valid_size) {
+    var size = valid_size;
+    if(!size){
+        alert("발 사이즈가 입력 되지 않았습니다");
+        return false;
+    } else if(!/^[0-9]{2,3}$/.test(size)){
+        alert("형식이 알맞지 않습니다.");
+        return false;
+    } else {
+        return true;
+    }
+}

@@ -3,6 +3,9 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
+    <feature name="NativeStorage">
+        <param name="browser-package" value="NativeStorage" />
+    </feature>
     <name>whatshoeApp</name>
     <description>
         A blank PhoneGap app.
@@ -14,4 +17,10 @@
     <access origin="*" />
     <access launch-external="yes" origin="http://*" />
     <access launch-external="yes" origin="https://*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
 </widget>

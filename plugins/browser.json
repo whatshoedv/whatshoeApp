@@ -24,6 +24,9 @@
         },
         "cordova-plugin-velda-devicefeedback": {
             "PACKAGE_NAME": "com.phonegap.whatshoeApp"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "com.phonegap.whatshoeApp"
         }
     },
     "dependent_plugins": {

@@ -1,6 +1,11 @@
 /**
  * Created by byeongkwan on 2017-02-16.
  */
+/**
+ * Created by byeongkwan on 2017-02-20.
+ */
+
+
 //백버튼
 $('#mypage_head_back').click(function () {
    location.href="main.html";
@@ -8,7 +13,12 @@ $('#mypage_head_back').click(function () {
 
 //발사이즈 등록
 $('#mypage_sizeRegister').click(function () {
-
+    var size = document.getElementById('mypage_footsizeInput').value;
+    if(valid_FootSize(size)){
+        NativeStorage.setItem("test",size);
+        alert(NativeStorage.getItem("test"));
+        alert("등록되었습니다.");
+    }
 });
 
 //유효성 체크 후 저장
@@ -30,7 +40,7 @@ $('#mypage_save').click(function () {
     };
 
     if(!valid_Idcheck(Id)){
-a
+
     } else if(!valid_NameCheck(Name)){
 
     } else if(!valid_PwCheck(Pw,Pw)){
@@ -45,7 +55,7 @@ a
 
     } else {
         alert("변경완료");
-        location.href="main.html"
+        location.href="main.html";
         //document.getElementById('join_form').submit();
     }
 
