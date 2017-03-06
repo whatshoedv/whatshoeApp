@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<man xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>201</code>
+		<content>상담 후 결제</content>
+	</service>
+	<service>
+		<code>202</code>
+		<content>구두닦이</content>
+	</service>
+	<service>
+		<code>203</code>
+		<content>남자 뒷굽갈이</content>
+	</service>
+	<service>
+		<code>204</code>
+		<content>남자 통굽갈이</content>
+	</service>
+	<service>
+		<code>205</code>
+		<content>남자 반창덧댐</content>
+	</service>
+	<service>
+		<code>206</code>
+		<content>남자 반창+뒷굽</content>
+	</service>
+	<service>
+		<code>207</code>
+		<content>남자 반창+통굽</content>
+	</service>
+	<service>
+		<code>208</code>
+		<content>남자 전창갈이</content>
+	</service>
+	<service>
+		<code>209</code>
+		<content>일반깔창</content>
+	</service>
+	<service>
+		<code>210</code>
+		<content>남자양말 무료배달</content>
+	</service>
+	<service>
+		<code>211</code>
+		<content>담배 무료배달</content>
+	</service>
+	<service>
+		<code>212</code>
+		<content>라이터 무료배달</content>
+	</service>
+</man>

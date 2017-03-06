@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>501</code>
+		<content>상담 후 결제</content>
+	</service>
+	<service>
+		<code>502</code>
+		<content>바디 염색</content>
+	</service>
+	<service>
+		<code>503</code>
+		<content>핸들 고리 교체</content>
+	</service>
+	<service>
+		<code>504</code>
+		<content>핸들 박음질</content>
+	</service>
+	<service>
+		<code>505</code>
+		<content>핸들 유약칠</content>
+	</service>
+	<service>
+		<code>506</code>
+		<content>핸들 제작</content>
+	</service>
+	<service>
+		<code>507</code>
+		<content>가방 테두리 파이핑</content>
+	</service>
+	<service>
+		<code>508</code>
+		<content>지퍼 손잡이</content>
+	</service>
+	<service>
+		<code>509</code>
+		<content>지퍼 전체 교체</content>
+	</service>
+	<service>
+		<code>510</code>
+		<content>안감교체</content>
+	</service>
+	<service>
+		<code>511</code>
+		<content>모서리 가죽 패치</content>
+	</service>
+	<service>
+		<code>512</code>
+		<content>바닥 찡</content>
+	</service>
+</bag>

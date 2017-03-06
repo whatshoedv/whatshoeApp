@@ -84,6 +84,22 @@ $('#join_btn').click(function () {
                     } else if(!valid_EmailCheck(email)){
 
                         } else {
-                            document.getElementById('join_form').submit();
+                            $.post("http://whatshoe.co.kr/bk/www/php/JoinCheck.php",
+                                {
+                                    join_id : id,
+                                    join_pw : pw,
+                                    join_name : name,
+                                    join_birth : birth,
+                                    join_mail : email,
+                                    join_gender : gender
+                                },
+                                function (data, status) {
+                                    if(data === "1"){
+                                        alert(data + "성공!");
+                                        location.href="login.html";
+                                    } else {
+                                        alert(data + "실패!");
+                                    }
+                                });
                         }
 });

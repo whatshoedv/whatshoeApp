@@ -18,12 +18,12 @@
 
     if($count_id == 1 || $count_mail == 1 )
     {
-        echo "아이디 또는 이메일 중복이 있습니다";
+        echo "2";
     } else {
-        $sql = "INSERT INTO bk_customer (_index,_id,_name,_pw,_gender,_birth,_mail,_join_type) VALUES ('0','$id','$name','$pw','$gender','$birth','$mail','original');";
+        $sql = "INSERT INTO bk_customer (_id,_name,_pw,_gender,_birth,_mail,_join_type) VALUES ('$id','$name','$pw','$gender','$birth','$mail','original');";
         mysqli_query($link,$sql);
         mysqli_close($link);
-        echo "성공";
+        echo "1";
         //echo("<script>location.replace('/');</script>");
     }
 ?>

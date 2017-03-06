@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<preman xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>401</code>
+		<content>상담 후 결제</content>
+	</service>
+	<service>
+		<code>402</code>
+		<content>프리미엄 슈케어</content>
+	</service>
+	<service>
+		<code>403</code>
+		<content>프리미엄 슈딥케어</content>
+	</service>
+	<service>
+		<code>404</code>
+		<content>Vibram 뒷굽갈이</content>
+	</service>
+	<service>
+		<code>405</code>
+		<content>Vibram 반창갈이</content>
+	</service>
+	<service>
+		<code>406</code>
+		<content>밑창수선</content>
+	</service>
+	<service>
+		<code>407</code>
+		<content>전창갈이+슈케어</content>
+	</service>
+	<service>
+		<code>408</code>
+		<content>Vibram 전창갈이</content>
+	</service>
+	<service>
+		<code>409</code>
+		<content>앞코 까진부분 염색</content>
+	</service>
+	<service>
+		<code>410</code>
+		<content>앞코 모양변형</content>
+	</service>
+	<service>
+		<code>411</code>
+		<content>염색</content>
+	</service>
+	<service>
+		<code>412</code>
+		<content>사이즈 줄임</content>
+	</service>
+	<service>
+		<code>413</code>
+		<content>깔창교체</content>
+	</service>
+	<service>
+		<code>414</code>
+		<content>남자양말 무료배달</content>
+	</service>
+	<service>
+		<code>415</code>
+		<content>담배 무료 배달</content>
+	</service>
+	<service>
+		<code>416</code>
+		<content>라이터 무료배달</content>
+	</service>
+</preman>

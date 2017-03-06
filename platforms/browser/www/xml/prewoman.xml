@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prewoman xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>301</code>
+		<content>상담 후 결제</content>
+	</service>
+	<service>
+		<code>302</code>
+		<content>프리미엄 슈케어</content>
+	</service>
+	<service>
+		<code>303</code>
+		<content>프리미엄 슈딥케어</content>
+	</service>
+	<service>
+		<code>304</code>
+		<content>프리미엄 뒷굽갈이(소)</content>
+	</service>
+	<service>
+		<code>305</code>
+		<content>프리미엄 뒷굽갈이(중)</content>
+	</service>
+	<service>
+		<code>306</code>
+		<content>프리미엄 뒷굽갈이(대)</content>
+	</service>
+	<service>
+		<code>307</code>
+		<content>Vibram 반창갈이</content>
+	</service>
+	<service>
+		<code>308</code>
+		<content>통굽갈이</content>
+	</service>
+	<service>
+		<code>309</code>
+		<content>밀창수선</content>
+	</service>
+	<service>
+		<code>310</code>
+		<content>프리미엄 힐 가죽교체</content>
+	</service>
+	<service>
+		<code>311</code>
+		<content>부츠케어(+슈케어)</content>
+	</service>
+	<service>
+		<code>312</code>
+		<content>앞코 까진부분 염색</content>
+	</service>
+	<service>
+		<code>313</code>
+		<content>앞코 모양변형</content>
+	</service>
+	<service>
+		<code>314</code>
+		<content>염색</content>
+	</service>
+	<service>
+		<code>315</code>
+		<content>힐줄이기</content>
+	</service>
+	<service>
+		<code>316</code>
+		<content>사이즈 줄임</content>
+	</service>
+	<service>
+		<code>317</code>
+		<content>깔창교체</content>
+	</service>
+	<service>
+		<code>318</code>
+		<content>부츠 통 늘림</content>
+	</service>
+	<service>
+		<code>319</code>
+		<content>부츠 통 줄임</content>
+	</service>
+	<service>
+		<code>320</code>
+		<content>부츠지퍼교체</content>
+	</service>
+	<service>
+		<code>321</code>
+		<content>부츠지퍼플러교체</content>
+	</service>
+	<service>
+		<code>322</code>
+		<content>스타킹 무료배달</content>
+	</service>
+	<service>
+		<code>323</code>
+		<content>담배 무료배달</content>
+	</service>
+	<service>
+		<code>324</code>
+		<content>라이터 무료배달</content>
+	</service>
+	<service>
+		<code>325</code>
+		<content>대일밴드 무료배달</content>
+	</service>
+</prewoman>

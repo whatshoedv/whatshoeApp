@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<woman xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>101</code>
+		<content>상담 후 결제</content>
+	</service>
+	<service>
+		<code>102</code>
+		<content>구두닦이</content>
+	</service>
+	<service>
+		<code>103</code>
+		<content>여자 보조굽(소)</content>
+	</service>
+	<service>
+		<code>104</code>
+		<content>여자 보조굽(중/대)</content>
+	</service>
+	<service>
+		<code>105</code>
+		<content>여자 반창덧댐(앞창)</content>
+	</service>
+	<service>
+		<code>106</code>
+		<content>여자 통굽갈이</content>
+	</service>
+	<service>
+		<code>107</code>
+		<content>부츠케어</content>
+	</service>
+	<service>
+		<code>108</code>
+		<content>전창갈이</content>
+	</service>
+	<service>
+		<code>109</code>
+		<content>일반깔창</content>
+	</service>
+	<service>
+		<code>110</code>
+		<content>스타킹 무료배달</content>
+	</service>
+	<service>
+		<code>111</code>
+		<content>대일밴드 무료배달</content>
+	</service>
+	<service>
+		<code>112</code>
+		<content>담배 무료배달</content>
+	</service>
+	<service>
+		<code>113</code>
+		<content>라이터 무료배달</content>
+	</service>
+</woman>

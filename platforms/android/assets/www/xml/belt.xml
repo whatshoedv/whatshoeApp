@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<belt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>601</code>
+		<content>상담 후 결제</content>
+	</service>
+	<service>
+		<code>602</code>
+		<content>바디 염색</content>
+	</service>
+	<service>
+		<code>603</code>
+		<content>핸들 고리 교체</content>
+	</service>
+	<service>
+		<code>604</code>
+		<content>핸들 박음질</content>
+	</service>
+	<service>
+		<code>605</code>
+		<content>핸들 유약칠</content>
+	</service>
+	<service>
+		<code>606</code>
+		<content>핸들 제작</content>
+	</service>
+	<service>
+		<code>607</code>
+		<content>가방 테두리 파이핑</content>
+	</service>
+	<service>
+		<code>608</code>
+		<content>지퍼 손잡이</content>
+	</service>
+</belt>

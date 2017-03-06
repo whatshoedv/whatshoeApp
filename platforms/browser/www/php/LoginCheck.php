@@ -13,10 +13,10 @@
             $sql = mysqli_query($link,$sql);
             $sql = mysqli_num_rows($sql);
             if($sql){
-                    echo("<script>location.replace('http://192.168.0.16:3000/main.html');</script>");
-                    echo "성공2";
+                   // echo("<script>location.replace('http://192.168.0.16:3000/main.html');</script>");
+                    echo "1";
             } else{
-
+                    echo "2";
             }
 
 ?>

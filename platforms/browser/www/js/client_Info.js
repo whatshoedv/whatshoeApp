@@ -11,3 +11,4 @@ function Client(Id, Name, Pw, Pw_more, Gender, Birth, Email, Phone){
     this.Email = Email;
     this.phone = Phone;
 }
+
