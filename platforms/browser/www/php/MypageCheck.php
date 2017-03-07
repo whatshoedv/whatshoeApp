@@ -25,7 +25,7 @@
             echo "비번없다";
         }
     } else {
-        $sql = "UPDATE bk_customer SET _name = '$name',_gender = '$gender',_birth = '$birth',_mail = '$mail',_phone = '$phone', _pw = '$pw' WHERE _id='$id'";
+        $sql = "UPDATE bk_customer SET _name = '$name',_pw = '$pw', _gender = '$gender',_birth = '$birth',_mail = '$mail',_phone = '$phone' WHERE _id='$id'";
 
             if(mysqli_query($link,$sql)){
                 mysqli_close($link);

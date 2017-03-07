@@ -4,6 +4,7 @@
 
 //이전 페이지 이동
 $('#order_head_back').click(function () {
+    Get_PixItem_Token();
    location.href="main.html";
 });
 
@@ -20,17 +21,17 @@ $('#cancel_btn').click(function () {
 });
 
 //주문번호 토큰 구분
+var pixItem = new Array();
+var order_Code = new Array();
+var length = window.localStorage.PixItem.length;
+
 function Get_PixItem_Token() {
-    var pixItem = new Array();
-    var order_Code = new Array();
-    var length = window.localStorage.PixItem.length;
     pixItem = window.localStorage.PixItem;
     var index = 0;
-       for (var j=0; j<length;j++){
-           if(j%3 == 0){
-               order_Code[index] = pixItem[j]+pixItem[j+1]+pixItem[j+2];
-               alert(index +":"+order_Code[index]);
-               index++;
-           }
+       for (var i=0; i<length/3;i++){
+           order_Code[i] = new Array();
+
+           order_Code[i] = pixItem[index] + pixItem[index+1]+ pixItem[index+2];
+           index+=3;
        }
 }

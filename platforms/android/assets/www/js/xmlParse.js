@@ -1,12 +1,14 @@
 var xml ;
 
 //여자 구두 xml 호출
-var woman_array_service = [];
-var woman_array_code = [];
+var woman_array_service = new Array();
+var woman_array_code = new Array();
 var woman_len;
+
 $.ajax({
     url:'http://whatshoe.co.kr/bk/www/xml/woman.xml',
     type:'GET',
+    async:false,
     dataType:'xml',
     timeout: 1000,
     error:function () {
@@ -22,6 +24,7 @@ $.ajax({
     }
 });
 
+
 //남자 구두 xml 호출
 var man_array_service = [];
 var man_array_code = [];
@@ -29,6 +32,7 @@ var man_len;
 $.ajax({
     url:'http://whatshoe.co.kr/bk/www/xml/man.xml',
     type:'GET',
+    async:false,
     dataType:'xml',
     timeout: 1000,
     error:function () {
@@ -51,6 +55,7 @@ var prewoman_len;
 $.ajax({
     url:'http://whatshoe.co.kr/bk/www/xml/prewoman.xml',
     type:'GET',
+    async:false,
     dataType:'xml',
     timeout: 1000,
     error:function () {
@@ -73,6 +78,7 @@ var preman_len;
 $.ajax({
     url:'http://whatshoe.co.kr/bk/www/xml/preman.xml',
     type:'GET',
+    async:false,
     dataType:'xml',
     timeout: 1000,
     error:function () {
@@ -95,6 +101,7 @@ var belt_len;
 $.ajax({
     url:'http://whatshoe.co.kr/bk/www/xml/belt.xml',
     type:'GET',
+    async:false,
     dataType:'xml',
     timeout: 1000,
     error:function () {
@@ -117,6 +124,7 @@ var bag_len;
 $.ajax({
     url:'http://whatshoe.co.kr/bk/www/xml/bag.xml',
     type:'GET',
+    async:false,
     dataType:'xml',
     timeout: 1000,
     error:function () {
@@ -139,6 +147,7 @@ var wallet_len;
 $.ajax({
     url:'http://whatshoe.co.kr/bk/www/xml/wallet.xml',
     type:'GET',
+    async:false,
     dataType:'xml',
     timeout: 1000,
     error:function () {
