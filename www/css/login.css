@@ -63,8 +63,8 @@ input {
 .row_input_id{
     background-image: url(../images/login_id.png);
     background-repeat: no-repeat;
-    background-size: auto 35px;
-    height: 35px;
+    background-size: auto 90%;
+    height: 90%;
     border-bottom: 1px solid #ffffff;
     background-color: #221616;
     margin-bottom: 15px;
@@ -75,14 +75,15 @@ input {
 .row_input_pw{
     background-image: url(../images/login_pw.png);
     background-repeat: no-repeat;
-    background-size: auto 35px;
-    height: 35px;
+    background-size: auto 90%;
+    height: 90%;
     border-bottom: 1px solid #ffffff;
     background-color: #221616;
     margin-bottom: 15px;
     width: 50%;
     margin-left: 25%;
     padding-left: 5px;
+
 }
 
 .input_title{
@@ -95,7 +96,9 @@ input {
 }
 
 #login_id, #login_pw{
-    margin-left: 50px;
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
 }
 
 #login_btn{
@@ -107,4 +110,33 @@ input {
 }
 #login_findPW:hover, #login_joinbtn:hover{
     cursor: pointer;
+}
+#login_btn{
+    background-color: #fab51a;
+    color: #252525;
+    margin:auto 0px;
+    margin-left: 25%;
+    width:50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+#facebook_btn{
+    background-color: #233edb;
+    margin:auto 0px;
+    margin-left:25%;
+    width:50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+#kakao_btn{
+    background-color: #FFFF00;
+    margin:auto 0px;
+    margin-left: 25%;
+    width:50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #252525;
+    border-radius: 10px;
 }

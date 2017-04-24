@@ -37,7 +37,11 @@ html, body {
     display: block;
     margin-bottom: 20px;
 }
-#modal_deliverNotice {
+#modal_deliverNotice{
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#modal_deliverNotice, #modal_moreInfo {
     display:none;
     background-color:#FFFFFF;
     position:absolute;
@@ -83,6 +87,49 @@ html, body {
     padding-top: 2%;
     text-align: center;
     background-color: #fab51a ;
+}
+#modal_moreInfo{
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #211813;
+    margin: 0 auto;
+}
+.row_modal_head1{
+    background-color: #fab51a;
+    width: 100%;
+    padding-top: 1%;
+    height: 30px;
+    border-radius: 10px;
+}
+#row_modal_line{
+    width: 100%;
+    border: 1px solid #fab51a;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#row_modal_price{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#modal_sumCost_text{
+    float: left;
+    color: #ffffff;
+}
+#modal_sumCost_price{
+    float: right;
+    color: #ffffff;
+}
+.row_modal_below1{
+    width: 100%;
+    color: #fab51a;
+    border: 1px solid #fab51a;
+}
+#modal_moreInfo_table{
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    font-size:10px;
 }
 
 .order_head{

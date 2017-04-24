@@ -1,7 +1,11 @@
 /**
  * Created by byeongkwan on 2017-02-13.
  */
+$(document).ready(function () {
+   document.getElementById('sidebar_name').textContent = client.Name;
+});
 $('#head_menu').click(function () {
+
     var sidebar = document.getElementById("sidebar");
 
     console.log(sidebar.style.left);

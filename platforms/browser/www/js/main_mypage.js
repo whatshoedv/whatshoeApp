@@ -4,6 +4,50 @@
 /**
  * Created by byeongkwan on 2017-02-20.
  */
+var login_id = document.getElementById('mypage_myId_input').value = localStorage.client_id;
+$(document).ready(function () {
+
+    $.post("http://whatshoe.co.kr/bk/www/php/LoadClient.php",
+        {
+            login_id : login_id
+        },
+        function (data, status) {
+            if(data != "2"){
+                $.each(data, function (key, val) {
+                    localStorage.client_id = val.id;
+                    localStorage.client_name = val.name;
+                    localStorage.client_gender = val.gender;
+                    localStorage.client_birth = val.birth;
+                    localStorage.client_email = val.email;
+                    localStorage.client_phone = val.phone;
+                    localStorage.client_size = val.size;
+
+                    if( localStorage.client_gender == "man" ){
+                        $("input:radio[name='mypage_gender_chk']:radio[value='man']").attr("checked", true);
+                        document.getElementById('mypage_usa_input').value = ((parseInt(localStorage.client_size) - 180)/10)+"US";
+                        document.getElementById('mypage_uk_input').value = ((parseInt(localStorage.client_size) - 180)/10 - 0.5)+"UK";
+                    } else {
+                        $("input:radio[name='mypage_gender_chk']:radio[value='woman']").attr("checked", true);
+                        document.getElementById('mypage_usa_input').value = ((parseInt(localStorage.client_size) - 170)/10)+"US";
+                        document.getElementById('mypage_uk_input').value = ((parseInt(localStorage.client_size) - 170)/10 - 2.5)+"UK";
+                    }
+
+                    document.getElementById('mypage_myId_input').value = localStorage.client_id;
+                    document.getElementById('mypage_myName_input').value = localStorage.client_name;
+                    document.getElementById('mypage_birth_input').value = localStorage.client_birth;
+                    document.getElementById('mypage_mail_input').value =  localStorage.client_email ;
+                    document.getElementById('mypage_phone_input').value = localStorage.client_phone;
+                    document.getElementById('mypage_footsizeInput').value = localStorage.client_size;
+
+                });
+            } else {
+                alert(data);
+                alert("아이디 혹은 비밀번호가 틀렸습니다.");
+            }
+        });
+
+});
+
 
 
 //백버튼
@@ -15,12 +59,24 @@ $('#mypage_head_back').click(function () {
 $('#mypage_sizeRegister').click(function () {
     var size = document.getElementById('mypage_footsizeInput').value;
     if(valid_FootSize(size)){
-        NativeStorage.setItem("test",size);
-        alert(NativeStorage.getItem("test"));
-        alert("등록되었습니다.");
+
+            $.post("http://whatshoe.co.kr/bk/www/php/MypageSize.php",
+                {
+                    login_id : login_id,
+                    foot_size : size
+                },
+                function (data, status) {
+                    if(data != "2"){
+                        location.href="main_mypage.html";
+                    } else {
+                        alert(data);
+                        alert("Error");
+                    }
+                });
     }
 });
-document.getElementById('mypage_myId_input').value = localStorage.LoginId;
+
+
 //유효성 체크 후 저장
 $('#mypage_save').click(function () {
     var Id = document.getElementById('mypage_myId_input').value;
@@ -32,12 +88,12 @@ $('#mypage_save').click(function () {
     var Gender_value;
     var Phone = document.getElementById('mypage_phone_input').value;
 
-    for(var i = 0 ; i<Gender.length;i++){
-        if(Gender[i].checked === true){
-            alert(Gender[i].value);
-            Gender_value = Gender[i].value;
-        }
-    };
+        for(var i = 0 ; i<Gender.length;i++){
+            if(Gender[i].checked === true){
+                alert(Gender[i].value);
+                Gender_value = Gender[i].value;
+            }
+        };
 
     if(!valid_NameCheck(Name)){
 
@@ -49,7 +105,7 @@ $('#mypage_save').click(function () {
 
     } else if(!valid_PhoneCheck(Phone)){
 
-    } if(Pw) {
+    } else if(Pw) {
         if (!valid_PwCheck(Pw,Pw)) {
 
         } else{

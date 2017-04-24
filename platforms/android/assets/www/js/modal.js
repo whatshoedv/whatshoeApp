@@ -98,7 +98,7 @@ if(typeof(Example) == "undefined") var Example = {};
             this.c_width = document.documentElement.clientWidth;
             this.c_height = document.documentElement.clientHeight;
             this.s_width = document.documentElement.scrollWidth;
-            this.s_height = document.documentElement.scrollHeight;
+            this.s_height = 2*document.documentElement.scrollHeight;
         },
 
         // 배경 레이어 HTML 생성

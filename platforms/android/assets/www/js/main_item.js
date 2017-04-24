@@ -1,6 +1,46 @@
 /**
  * Created by byeongkwan on 2017-02-10.
  */
+var main_woman_price = new Array();
+var main_man_price = new Array();
+var main_prewoman_price = new Array();
+var main_preman_price = new Array();
+var main_bag_price = new Array();
+var main_belt_price = new Array();
+var main_wallet_price = new Array();
+
+//각 서비스마다 가격 배열에 저장
+for(var i=1; i<=13; i++){
+    main_woman_price[i] = document.getElementById('item_woman_cost'+i).value;
+}
+for(var i=1; i<=12; i++){
+    main_man_price[i] = document.getElementById('item_man_cost'+i).value;
+}
+for(var i=1; i<=25; i++){
+    main_prewoman_price[i] = document.getElementById('item_prewoman_cost'+i).value;
+}
+for(var i=1; i<=16; i++){
+    main_preman_price[i] = document.getElementById('item_preman_cost'+i).value;
+}
+for(var i=1; i<=12; i++){
+    main_bag_price[i] = document.getElementById('item_bag_cost'+i).value;
+}
+for(var i=1; i<=8; i++){
+    main_belt_price[i] = document.getElementById('item_belt_cost'+i).value;
+}
+for(var i=1; i<=9; i++){
+    main_wallet_price[i] = document.getElementById('item_wallet_cost'+i).value;
+}
+
+window.localStorage.setItem("woman_price",JSON.stringify(main_woman_price));
+window.localStorage.setItem("man_price",JSON.stringify(main_man_price));
+window.localStorage.setItem("prewoman_price",JSON.stringify(main_prewoman_price));
+window.localStorage.setItem("preman_price",JSON.stringify(main_preman_price));
+window.localStorage.setItem("bag_price",JSON.stringify(main_bag_price));
+window.localStorage.setItem("belt_price",JSON.stringify(main_belt_price));
+window.localStorage.setItem("wallet_price",JSON.stringify(main_wallet_price));
+
+
 window.localStorage.PixItem=""; //어떤 항목 인지 토큰저장 초기화
 
 window.localStorage.womanPixItem = "";
@@ -13,6 +53,7 @@ window.localStorage.walletPixItem = "";
 
 var PixItem;
 var subjet = "서비스를 선택하면 간단한 설명을 보여드립니다.";
+
 
 //각 항목을 클릭하게 되면 #10부터 각 고유 코드가 쌓이게 된다.
 $('#confirm_woman_button').click(function(){

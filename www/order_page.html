@@ -42,9 +42,9 @@
                         </div>
                     </div>
                     <div class="order_body_row">
-                        <input type="radio" id="pickup_btn" name="pickup_chk" style="display: inline-block">
+                        <input type="radio" id="pickup_btn" name="pickup_chk" value="pickup_direct" style="display: inline-block">
                         <label>바로 픽업</label>
-                        <input type="radio" id="pickup_reserve_btn" name="pickup_chk" style="display: inline-block">
+                        <input type="radio" id="pickup_reserve_btn" name="pickup_chk" value="pickup_reserve" style="display: inline-block">
                         <label>픽업 예약</label>
                     </div>
                     <div class="order_body_row">
@@ -118,7 +118,7 @@
 <!-----------배달 비용 안내 모달------------->
 
 <div id="modal_deliverNotice">
-        <div class="row_modal_head">
+    <div class="row_modal_head">
         <b><span id="modal_head_text">배달 비용 안내</span></b>
     </div>
     <div class="row_modal_body">
@@ -136,6 +136,26 @@
         <div id="deliverModal_confirm">확 인</div>
     </div>
 </div>
+
+<div id="modal_moreInfo">
+    <div class="row_modal_head1">
+        <b><span id="modal_head_text1">서비스 신청 내역</span> </b>
+    </div>
+    <table id="modal_moreInfo_table">
+        <tbody id="body_moreInfo"></tbody>
+    </table>
+    <div id="row_modal_line"></div>
+    <div id="row_modal_price">
+        <span id="modal_sumCost_text">총 결제 금액</span>
+        <span id="modal_sumCost_price"></span>
+    </div>
+    <br>
+    <div class="row_modal_below1">
+        <div id="moreInfo_confirm">확 인</div>
+    </div>
+</div>
+
+
 <script type="text/javascript" src="js/xmlParse.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/order_modal.js"></script>
