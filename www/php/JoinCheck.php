@@ -7,8 +7,8 @@
     $birth = $_POST['join_birth'];
     $mail = $_POST['join_mail'];
 
-    $sql_id = "SELECT _id FROM bk_customer WHERE _id='".$id."';";
-    $sql_mail = "SELECT _mail FROM bk_customer WHERE _mail='".$mail."';";
+    $sql_id = "SELECT id FROM whatshoe_member WHERE id='".$id."';";
+    $sql_mail = "SELECT mail FROM whatshoe_member WHERE mail='".$mail."';";
 
     $result_id = mysqli_query($link,$sql_id);
     $result_mail = mysqli_query($link,$sql_mail);
@@ -20,7 +20,7 @@
     {
         echo "2";
     } else {
-        $sql = "INSERT INTO bk_customer (_id,_name,_pw,_gender,_birth,_mail,_join_type) VALUES ('$id','$name','$pw','$gender','$birth','$mail','original');";
+        $sql = "INSERT INTO whatshoe_member (id,name,pass,sex,birth,mail,permit) VALUES ('$id','$name','$pw','$gender','$birth','$mail',1);";
         mysqli_query($link,$sql);
         mysqli_close($link);
         echo "1";

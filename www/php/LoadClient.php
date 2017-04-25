@@ -6,20 +6,24 @@
     mysqli_query($link,"set names utf8");
 
 
-            $sql = "SELECT * FROM bk_customer WHERE _id='$id';";
+            $sql = "SELECT * FROM whatshoe_member WHERE id='$id';";
             $result = $sql = mysqli_query($link,$sql);
             $sql = mysqli_num_rows($sql);
             if($sql){
                     $obj = array();
                     while($row = mysqli_fetch_object($result)){
                         $res = new stdClass();
-                        $res->id = $row->_id;
-                        $res->name = $row->_name;
-                        $res->gender = $row->_gender;
-                        $res->birth = $row->_birth;
-                        $res->size = $row->_foot_size;
-                        $res->email = $row->_mail;
-                        $res->phone = $row->_phone;
+                        $res->index = $row->_index;
+                        $res->id = $row->id;
+                        $res->name = $row->name;
+                        $res->gender = $row->sex;
+                        $res->birth = $row->birth;
+                        $res->email = $row->mail;
+                        $res->phone = $row->phone;
+                        $res->foot_size = $row->foot_size;
+                        $res->point = $row->point;
+                        $res->permit = $row->permit;
+                        $res->retention = $row->retention;
                         $obj[] = $res;
                         unset($res);
                     }

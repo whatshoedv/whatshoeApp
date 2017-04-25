@@ -9,14 +9,14 @@
     $phone = $_POST['mypage_phone'];
 
 
-    $sql_id = "SELECT * FROM bk_customer WHERE _id='".$id."';";
+    $sql_id = "SELECT * FROM whatshoe_member WHERE id='".$id."';";
 
     $result_id = mysqli_query($link,$sql_id);
 
     $count_id = mysqli_num_rows($result_id);
 
     if($pw == "no") {
-        $sql = "UPDATE bk_customer SET _name = '$name',_gender = '$gender',_birth = '$birth',_mail = '$mail',_phone = '$phone' WHERE _id='$id'";
+        $sql = "UPDATE whatshoe_member SET name = '$name',sex = '$gender',birth = '$birth',mail = '$mail',phone = '$phone' WHERE id='$id'";
 
         if(mysqli_query($link,$sql)){
             mysqli_close($link);
@@ -25,13 +25,13 @@
             echo "비번없다";
         }
     } else {
-        $sql = "UPDATE bk_customer SET _name = '$name',_pw = '$pw', _gender = '$gender',_birth = '$birth',_mail = '$mail',_phone = '$phone' WHERE _id='$id'";
+        $sql = "UPDATE whatshoe_member SET name = '$name',pass = '$pw', sex = '$gender',birth = '$birth',mail = '$mail',phone = '$phone' WHERE id='$id'";
 
             if(mysqli_query($link,$sql)){
                 mysqli_close($link);
                 echo "1";
             } else{
-                echo "비번잇다";
+                echo "비번있다";
             }
     }
 ?>

@@ -1,9 +1,9 @@
 <?php
     include("dbConnect.php");
-    $id= $_POST['login_id'];
-    $size = $_POST['foot_size'];
+    $id= $_POST['id'];
+    $retention = $_POST['retention'];
 
-        $sql = "UPDATE whatshoe_member SET foot_size = '$size' WHERE id='$id'";
+        $sql = "UPDATE whatshoe_member SET retention = '$retention' WHERE id='$id'";
 
         if(mysqli_query($link,$sql)){
             mysqli_close($link);

@@ -20,16 +20,26 @@ $(document).ready(function () {
                     localStorage.client_birth = val.birth;
                     localStorage.client_email = val.email;
                     localStorage.client_phone = val.phone;
-                    localStorage.client_size = val.size;
+                    localStorage.client_size = val.foot_size;
 
                     if( localStorage.client_gender == "man" ){
                         $("input:radio[name='mypage_gender_chk']:radio[value='man']").attr("checked", true);
-                        document.getElementById('mypage_usa_input').value = ((parseInt(localStorage.client_size) - 180)/10)+"US";
-                        document.getElementById('mypage_uk_input').value = ((parseInt(localStorage.client_size) - 180)/10 - 0.5)+"UK";
+                        if(localStorage.client_size == "0"){
+                            document.getElementById('mypage_usa_input').value = 0;
+                            document.getElementById('mypage_uk_input').value = 0;
+                        } else{
+                            document.getElementById('mypage_usa_input').value = ((parseInt(localStorage.client_size) - 180)/10)+"US";
+                            document.getElementById('mypage_uk_input').value = ((parseInt(localStorage.client_size) - 180)/10 - 0.5)+"UK";
+                        }
                     } else {
                         $("input:radio[name='mypage_gender_chk']:radio[value='woman']").attr("checked", true);
-                        document.getElementById('mypage_usa_input').value = ((parseInt(localStorage.client_size) - 170)/10)+"US";
-                        document.getElementById('mypage_uk_input').value = ((parseInt(localStorage.client_size) - 170)/10 - 2.5)+"UK";
+                        if(localStorage.client_size == "0"){
+                            document.getElementById('mypage_usa_input').value = 0;
+                            document.getElementById('mypage_uk_input').value = 0;
+                        } else {
+                            document.getElementById('mypage_usa_input').value = ((parseInt(localStorage.client_size) - 170)/10)+"US";
+                            document.getElementById('mypage_uk_input').value = ((parseInt(localStorage.client_size) - 170)/10 - 2.5)+"UK";
+                        }
                     }
 
                     document.getElementById('mypage_myId_input').value = localStorage.client_id;

@@ -2,78 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a609f7e-80ea-4e26-b1ed-e484150c6b7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/php/LoadClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/php/MypageSize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/php/OrderCheck.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/php/orderRetention.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/Item_Service_Info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/api.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/login.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/order.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/order.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/first_slide.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/first_slide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/client_Info.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/client_Info.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/login_check.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/login_check.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/main_coupon.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/main_coupon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/main_item.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/main_item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/main_list.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/main_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/main_mypage.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/main_mypage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/main_slidebar.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/main_slidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/modal.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/order.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/order_modal.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/order_modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/service_tokenCheck.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/service_tokenCheck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/valid_Check.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/valid_Check.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/login.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/main.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/main_mypage.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/main_mypage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/order_page.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/order_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/php/LoginCheck.php" afterPath="$PROJECT_DIR$/platforms/android/assets/www/php/LoginCheck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/css/login.css" afterPath="$PROJECT_DIR$/platforms/browser/www/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/css/order.css" afterPath="$PROJECT_DIR$/platforms/browser/www/css/order.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/first_slide.html" afterPath="$PROJECT_DIR$/platforms/browser/www/first_slide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" afterPath="$PROJECT_DIR$/platforms/browser/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/client_Info.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/client_Info.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/login_check.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/login_check.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/main_coupon.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/main_coupon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/main_item.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/main_item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/main_list.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/main_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/main_mypage.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/main_mypage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/main_slidebar.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/main_slidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/modal.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/order.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/order_modal.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/order_modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/service_tokenCheck.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/service_tokenCheck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/valid_Check.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/valid_Check.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/login.html" afterPath="$PROJECT_DIR$/platforms/browser/www/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/main.html" afterPath="$PROJECT_DIR$/platforms/browser/www/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/main_mypage.html" afterPath="$PROJECT_DIR$/platforms/browser/www/main_mypage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/order_page.html" afterPath="$PROJECT_DIR$/platforms/browser/www/order_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/php/LoginCheck.php" afterPath="$PROJECT_DIR$/platforms/browser/www/php/LoginCheck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/login.css" afterPath="$PROJECT_DIR$/www/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/order.css" afterPath="$PROJECT_DIR$/www/css/order.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/first_slide.html" afterPath="$PROJECT_DIR$/www/first_slide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/client_Info.js" afterPath="$PROJECT_DIR$/www/js/client_Info.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/login_check.js" afterPath="$PROJECT_DIR$/www/js/login_check.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/main_coupon.js" afterPath="$PROJECT_DIR$/www/js/main_coupon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/main_item.js" afterPath="$PROJECT_DIR$/www/js/main_item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/main_list.js" afterPath="$PROJECT_DIR$/www/js/main_list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/join_check.js" afterPath="$PROJECT_DIR$/www/js/join_check.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/main_mypage.js" afterPath="$PROJECT_DIR$/www/js/main_mypage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/main_slidebar.js" afterPath="$PROJECT_DIR$/www/js/main_slidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/modal.js" afterPath="$PROJECT_DIR$/www/js/modal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/order.js" afterPath="$PROJECT_DIR$/www/js/order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/order_modal.js" afterPath="$PROJECT_DIR$/www/js/order_modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/service_tokenCheck.js" afterPath="$PROJECT_DIR$/www/js/service_tokenCheck.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/valid_Check.js" afterPath="$PROJECT_DIR$/www/js/valid_Check.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/login.html" afterPath="$PROJECT_DIR$/www/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.html" afterPath="$PROJECT_DIR$/www/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main_mypage.html" afterPath="$PROJECT_DIR$/www/main_mypage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/order_page.html" afterPath="$PROJECT_DIR$/www/order_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/php/JoinCheck.php" afterPath="$PROJECT_DIR$/www/php/JoinCheck.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/php/LoadClient.php" afterPath="$PROJECT_DIR$/www/php/LoadClient.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/php/LoginCheck.php" afterPath="$PROJECT_DIR$/www/php/LoginCheck.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/php/MypageCheck.php" afterPath="$PROJECT_DIR$/www/php/MypageCheck.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/php/MypageSize.php" afterPath="$PROJECT_DIR$/www/php/MypageSize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/php/OrderCheck.php" afterPath="$PROJECT_DIR$/www/php/OrderCheck.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -88,17 +35,49 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+            <file leaf-file-name="LoadClient.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/www/php/LoadClient.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="750">
+                    <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="whatshoeApp" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1325">
-              <caret line="53" column="62" lean-forward="false" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
+            <state relative-caret-position="235">
+              <caret line="111" column="28" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+              <folding>
+                <marker date="1493106146045" expanded="true" signature="1892:2780" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderRetention.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/php/orderRetention.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -114,31 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service_tokenCheck.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/service_tokenCheck.js">
+      <file leaf-file-name="main_bag_item.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/main_bag_item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2000">
-              <caret line="80" column="75" lean-forward="false" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xmlParse.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/xmlParse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2928">
-              <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_check.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/login_check.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="4725">
+              <caret line="189" column="35" lean-forward="false" selection-start-line="189" selection-start-column="35" selection-end-line="189" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -147,45 +106,55 @@
       <file leaf-file-name="main_mypage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/main_mypage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="325">
+              <caret line="15" column="50" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="15" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_modal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/main_modal.js">
+      <file leaf-file-name="login_check.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/login_check.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+            <state relative-caret-position="575">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="28" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_man_item.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/main_man_item.js">
+      <file leaf-file-name="join_check.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/join_check.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="105" lean-forward="true" selection-start-line="26" selection-start-column="105" selection-end-line="26" selection-end-column="105" />
+            <state relative-caret-position="2500">
+              <caret line="100" column="60" lean-forward="true" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_item.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/main_item.js">
+      <file leaf-file-name="order_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/order_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="77" column="66" lean-forward="false" selection-start-line="77" selection-start-column="66" selection-end-line="77" selection-end-column="66" />
+            <state relative-caret-position="1150">
+              <caret line="46" column="97" lean-forward="false" selection-start-line="46" selection-start-column="97" selection-end-line="46" selection-end-column="97" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_belt_item.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/main_belt_item.js">
+      <file leaf-file-name="main_point.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/main_point.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_preman_item.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/main_preman_item.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -229,6 +198,7 @@
       <find>원</find>
       <find>modal_deliverNotice</find>
       <find>modal</find>
+      <find>pickup_chk</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,8 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/js/main_belt_item.js" />
-        <option value="$PROJECT_DIR$/www/js/main_bag_item.js" />
         <option value="$PROJECT_DIR$/www/css/main.css" />
         <option value="$PROJECT_DIR$/www/js/main_move.js" />
         <option value="$PROJECT_DIR$/www/css/slide.css" />
@@ -262,12 +230,9 @@
         <option value="$PROJECT_DIR$/www/js/test.js" />
         <option value="$PROJECT_DIR$/www/php/test.php" />
         <option value="$PROJECT_DIR$/www/php/dbConnect.php" />
-        <option value="$PROJECT_DIR$/www/js/join_check.js" />
         <option value="$PROJECT_DIR$/www/js/service_item.js" />
         <option value="$PROJECT_DIR$/www/xml/bag.xml" />
         <option value="$PROJECT_DIR$/www/js/Item_Service_Info.js" />
-        <option value="$PROJECT_DIR$/www/php/JoinCheck.php" />
-        <option value="$PROJECT_DIR$/www/php/MypageCheck.php" />
         <option value="$PROJECT_DIR$/www/js/xmlParse.js" />
         <option value="$PROJECT_DIR$/www/js/main_man_item.js" />
         <option value="$PROJECT_DIR$/www/js/main_list.js" />
@@ -275,9 +240,6 @@
         <option value="$PROJECT_DIR$/www/js/service_tokenCheck.js" />
         <option value="$PROJECT_DIR$/www/css/order.css" />
         <option value="$PROJECT_DIR$/www/css/login.css" />
-        <option value="$PROJECT_DIR$/www/order_page.html" />
-        <option value="$PROJECT_DIR$/www/js/order.js" />
-        <option value="$PROJECT_DIR$/www/php/LoginCheck.php" />
         <option value="$PROJECT_DIR$/www/js/order_modal.js" />
         <option value="$PROJECT_DIR$/www/js/main_coupon.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
@@ -288,11 +250,19 @@
         <option value="$PROJECT_DIR$/www/js/modal.js" />
         <option value="$PROJECT_DIR$/www/js/main_slidebar.js" />
         <option value="$PROJECT_DIR$/www/main_mypage.html" />
+        <option value="$PROJECT_DIR$/www/js/valid_Check.js" />
+        <option value="$PROJECT_DIR$/www/php/JoinCheck.php" />
+        <option value="$PROJECT_DIR$/www/js/join_check.js" />
         <option value="$PROJECT_DIR$/www/js/client_Info.js" />
+        <option value="$PROJECT_DIR$/www/php/MypageCheck.php" />
+        <option value="$PROJECT_DIR$/www/php/LoginCheck.php" />
         <option value="$PROJECT_DIR$/www/php/LoadClient.php" />
         <option value="$PROJECT_DIR$/www/php/MypageSize.php" />
         <option value="$PROJECT_DIR$/www/js/main_mypage.js" />
-        <option value="$PROJECT_DIR$/www/js/valid_Check.js" />
+        <option value="$PROJECT_DIR$/www/order_page.html" />
+        <option value="$PROJECT_DIR$/www/php/orderRetention.php" />
+        <option value="$PROJECT_DIR$/www/js/order.js" />
+        <option value="$PROJECT_DIR$/www/php/OrderCheck.php" />
       </list>
     </option>
   </component>
@@ -323,6 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,24 +317,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatshoeApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatshoeApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -602,7 +555,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -617,16 +569,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\whatshoeApp\www\css" />
+      <recent name="E:\workspace\whatshoeApp\www\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\whatshoeApp\www\php" />
       <recent name="E:\workspace\whatshoeApp\www" />
       <recent name="E:\workspace\whatshoeApp\www\images" />
       <recent name="E:\workspace\whatshoeApp\www\js" />
       <recent name="E:\workspace\whatshoeApp\www\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\whatshoeApp\www\css" />
-      <recent name="E:\workspace\whatshoeApp\www\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -746,17 +698,20 @@
       <workItem from="1491802148841" duration="621000" />
       <workItem from="1492050030336" duration="5952000" />
       <workItem from="1492508744819" duration="41000" />
+      <workItem from="1493082977781" duration="8109000" />
+      <workItem from="1493103592429" duration="729000" />
+      <workItem from="1493106092056" duration="128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345380000" />
+    <option name="totallyTimeSpent" value="354346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23242393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23032528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -827,30 +782,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/php/idCheck.php" />
-    <entry file="file://$PROJECT_DIR$/www/php/test.php" />
-    <entry file="file://$PROJECT_DIR$/www/js/test.js" />
-    <entry file="file://$PROJECT_DIR$/www/bag.xml" />
     <entry file="file://$PROJECT_DIR$/www/js/service_item.js" />
     <entry file="file://$PROJECT_DIR$/www/xml/bag.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-84">
           <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_woman_item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_point.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -903,31 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/order_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/join_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/debug.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/php/JoinCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -952,41 +867,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/first_slide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/php/LoadClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_slidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/php/LoginCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/main_prewoman_item.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,31 +881,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/php/MypageCheck.php">
+    <entry file="file://$PROJECT_DIR$/www/images/join_sex_woman_press.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/join.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="-1957">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/valid_Check.js">
+    <entry file="file://$PROJECT_DIR$/www/join_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2225">
-          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        <state relative-caret-position="-300">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/first_slide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/api.js" />
+    <entry file="file://$PROJECT_DIR$/www/js/client_Info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/Item_Service_Info.js" />
+    <entry file="file://$PROJECT_DIR$/www/js/xmlParse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="122" column="12" lean-forward="true" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/main_woman_item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/main_slidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/php/JoinCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/php/LoginCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/php/MypageCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/php/MypageSize.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <caret line="5" column="69" lean-forward="false" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/php/OrderCheck.php">
+    <entry file="file://$PROJECT_DIR$/www/js/valid_Check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="828">
+          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/service_tokenCheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/main_belt_item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2522">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1032,38 +1000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/client_Info.js">
+    <entry file="file://$PROJECT_DIR$/www/js/main_item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/Item_Service_Info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/join_check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="97" column="60" lean-forward="true" selection-start-line="97" selection-start-column="60" selection-end-line="97" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_bag_item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3225">
-          <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+        <state relative-caret-position="-2822">
+          <caret line="77" column="66" lean-forward="false" selection-start-line="77" selection-start-column="66" selection-end-line="77" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1074,65 +1014,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_move.js">
+    <entry file="file://$PROJECT_DIR$/www/js/main_man_item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2450">
-          <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-          <folding>
-            <marker date="1489647398043" expanded="true" signature="2971:3078" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/service_tokenCheck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2000">
-          <caret line="80" column="75" lean-forward="false" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_mypage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="53" column="62" lean-forward="false" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="-3597">
+          <caret line="26" column="105" lean-forward="true" selection-start-line="26" selection-start-column="105" selection-end-line="26" selection-end-column="105" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/main_modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
+        <state relative-caret-position="503">
           <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_man_item.js">
+    <entry file="file://$PROJECT_DIR$/www/js/main_move.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="105" lean-forward="true" selection-start-line="26" selection-start-column="105" selection-end-line="26" selection-end-column="105" />
+        <state relative-caret-position="1075">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_belt_item.js">
+    <entry file="file://$PROJECT_DIR$/www/js/main_bag_item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="189" column="35" lean-forward="false" selection-start-line="189" selection-start-column="35" selection-end-line="189" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/main_point.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/main_preman_item.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1148,26 +1068,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/main_mypage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/login_check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="575">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="28" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/main_item.js">
+    <entry file="file://$PROJECT_DIR$/www/order_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="77" column="66" lean-forward="false" selection-start-line="77" selection-start-column="66" selection-end-line="77" selection-end-column="66" />
+        <state relative-caret-position="1150">
+          <caret line="46" column="97" lean-forward="false" selection-start-line="46" selection-start-column="97" selection-end-line="46" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/xmlParse.js">
+    <entry file="file://$PROJECT_DIR$/www/js/join_check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2928">
-          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
+        <state relative-caret-position="2500">
+          <caret line="100" column="60" lean-forward="true" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/php/orderRetention.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/php/LoadClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="111" column="28" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+          <folding>
+            <marker date="1493106146045" expanded="true" signature="1892:2780" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/php/OrderCheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
       </provider>

@@ -9,15 +9,15 @@ $('#gender_man').click(function (){
     var woman = document.getElementById('gender_girl');
     var none = document.getElementById('gender_none');
 
-    man.style.backgroundImage="url(../images/join_sex_man_press.png)";
+    man.style.backgroundImage="url('images/join_sex_man_press.png')";
     man.style.backgroundRepeat="no-repeat";
     man.style.backgroundSize="cover";
 
-    woman.style.backgroundImage="url(../images/join_sex_woman.png)";
+    woman.style.backgroundImage="url('images/join_sex_woman.png')";
     woman.style.backgroundRepeat="no-repeat";
     woman.style.backgroundSize="cover"
 
-    none.style.backgroundImage="url(../images/join_sex_no.png)";
+    none.style.backgroundImage="url('images/join_sex_no.png')";
     none.style.backgroundRepeat="no-repeat";
     none.style.backgroundSize="cover";
 });
@@ -28,15 +28,15 @@ $('#gender_girl').click(function (){
     var woman = document.getElementById('gender_girl');
     var none = document.getElementById('gender_none');
 
-    man.style.backgroundImage="url(../images/join_sex_man.png)";
+    man.style.backgroundImage="url('images/join_sex_man.png')";
     man.style.backgroundRepeat="no-repeat";
     man.style.backgroundSize="cover";
 
-    woman.style.backgroundImage="url(../images/join_sex_woman_press.png)";
+    woman.style.backgroundImage="url('images/join_sex_woman_press.png')";
     woman.style.backgroundRepeat="no-repeat";
     woman.style.backgroundSize="cover"
 
-    none.style.backgroundImage="url(../images/join_sex_no.png)";
+    none.style.backgroundImage="url('images/join_sex_no.png')";
     none.style.backgroundRepeat="no-repeat";
     none.style.backgroundSize="cover";;
 });
@@ -47,15 +47,15 @@ $('#gender_none').click(function (){
     var woman = document.getElementById('gender_girl');
     var none = document.getElementById('gender_none');
 
-    man.style.backgroundImage="url(../images/join_sex_man.png)";
+    man.style.backgroundImage="url('images/join_sex_man.png')";
     man.style.backgroundRepeat="no-repeat";
     man.style.backgroundSize="cover";
 
-    woman.style.backgroundImage="url(../images/join_sex_woman.png)";
+    woman.style.backgroundImage="url('images/join_sex_woman.png')";
     woman.style.backgroundRepeat="no-repeat";
     woman.style.backgroundSize="cover"
 
-    none.style.backgroundImage="url(../images/join_sex_no_press.png)";
+    none.style.backgroundImage="url('images/join_sex_no_press.png')";
     none.style.backgroundRepeat="no-repeat";
     none.style.backgroundSize="cover";;
 });
@@ -99,6 +99,7 @@ $('#join_btn').click(function () {
                                         location.href="login.html";
                                     } else {
                                         alert(data + "실패!");
+                                        alert("다시 확인해보세요");
                                     }
                                 });
                         }
