@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:#DEDEDE;
+}
+.phone-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+}
+.phone-body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #211813;
+    display: table;
+}
+
+.join {
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#logo {
+    background-image: url(../images/join_logo.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 200px;
+    padding: 0;
+    height: 200px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.row {
+    color: white;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #221616;
+    background-color: #221616;
+
+}
+
+.row_input{
+    height: 35px;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    background-color: #221616;
+    margin-bottom: 8px;
+    width: 50%;
+    margin-left: 25%;
+    padding-left: 5px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input_title{
+    display: inline-block;
+}
+.row_gender{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#gender_girl, #gender_man, #gender_none {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#gender_none{
+    float: right;
+}
+#gender_man{
+    float: left;
+}
+.row_check{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#join_btn {
+    width: 100%;
+    height: 40px;
+    padding-top: 3%;
+    background-color: #f25a45;
+    color: white;
+    border: 1px solid #f25a45;
+}
+#join_btn:hover{
+    cursor: pointer;
+}
+#join_CheckAgree{
+    width: 20px;
+    height: 20px;
+    margin-left: 50%;
+}
+#join_InfoAgree{
+    width: 20px;
+    height: 20px;
+    margin-left: 50%;
+}
+#gender_girl:hover{
+    background-image: url("../images/join_sex_woman_press.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gender_none:hover{
+    background-image: url("../images/join_sex_no_press.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gender_man:hover{
+    background-image: url("../images/join_sex_man_press.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

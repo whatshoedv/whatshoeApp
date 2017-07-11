@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/login.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <div class="phone-wrapper">
+        <div class="phone-body">
+            <div class="login">
+                <div class="row">
+                    <div id="logo">
+                        <a tabindex="-1" title="title">왓슈</a>
+                    </div>
+                </div>
+                <!---------------login input form -------------------->
+                <div class="row">
+                    <form id="login_form" method="post" action="http://whatshoe.co.kr/bk/www/php/LoginCheck.php">
+                        <div class ="row_input_id">
+                            <div class="input_title"><a id="id_img" tabindex="-1"></a></div>
+                            <input name="login_id" id="login_id" type="text" placeholder="아이디를 입력 해 주세요." onfocus="this.style.color='white';">
+                        </div>
+                        <div class ="row_input_pw">
+                            <div class="input_title"><a id="pw_img" tabindex="-1"></a></div>
+                            <input name="login_pw" id="login_pw" type="password" placeholder="패스워드를 입력 해 주세요." onfocus="this.style.color='white';">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <div id="login_btn">로그인</div>
+                    </div>
+                    <div class="row">
+                        <div id="facebook_btn">페이스북</div>
+                    </div>
+                    <div class="row">
+                        <div id="kakao_btn">카카오톡</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a id="login_joinbtn">회원가입</a>
+                    <a id="login_findPW">비밀번호 찾기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="test">
+
+    </div>
+    <script type="text/javascript">
+        $('#login_joinbtn').click(function () {
+            location.href="join_page.html";
+        })
+        $('#login_findPW').click(function () {
+            alert("아직 활성화되지 않았습니다.");
+        })
+
+    </script>
+    <script type="text/javascript" src="js/client_Info.js"></script>
+    <script type="text/javascript" src="js/xmlParse.js"></script>
+    <script type="text/javascript" src="js/login_check.js"></script>
+    <script type="text/javascript" src="js/valid_Check.js"></script>
+</body>
+</html>

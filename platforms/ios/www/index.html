@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <link type="text/css" rel="stylesheet" href="css/loading.css" />
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <div class="phone-wrapper">
+            <div class="phone-body">
+                <div class="loading">
+                    <img id="loading_img" src="images/loading.png"/>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            setTimeout(function(){
+                location.href="first_slide.html";
+            },3000);
+            //3초 후 실행되는 함수
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css"  rel="stylesheet" href="css/main_coupon.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="cordova.js"></script>
+    <div class="phone-wrapper">
+        <div class="phone-body">
+            <div class="coupon_head">
+                <img id="coupon_head_back" src="images/prev_btn.png"/>
+                <span id="coupon_head_title">COUPON</span>
+            </div>
+            <div class="coupon_body">
+                <img id="coupon_nothing_img" src="images/ing.png"/>
+                <br>
+                <span id="coupon_nothing_text">
+                        현재 등록된 쿠폰이 없습니다.
+                </span>
+                <br>
+                <div id="coupon_register">쿠폰 등록 하기</div>
+            </div>
+        </div>
+    </div>
+<!------------쿠폰 등록 모달------------->
+<div id="modal_coupon">
+    <div class="modal_coupon_head">
+        <img id="modal_coupon_cancelImg" src="images/cancle.png" />
+        <span id="modal_coupon_headText">쿠폰 등록</span>
+    </div>
+    <div class="modal_coupon_body">
+        <span id="modal_coupon_bodyText">선물 받은 쿠폰 등록</span>
+        <br>
+        <form id="modal_cooupon_form" method="post">
+            <input id="modal_coupon_register" type="text" placeholder="쿠폰 번호를 입력하세요."/>
+        </form>
+        <div id="modal_coupon_registerBTN">등 록</div>
+    </div>
+</div>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/main_coupon.js"></script>
+</body>
+</html>

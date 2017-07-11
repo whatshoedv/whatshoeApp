@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/main_sidebar.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+</head>
+<body>
+
+<!--------슬라이드 메뉴 --------->
+<div id="sidebar" style="position: fixed; display: inline-block; height: 100%; width: 80%; left: -80%; background-color: #ffffff; transition: all 0.5s ease-in-out; z-index: 1;">
+    <div class="sidebar_head">
+        <div class="row">
+            <img src="images/cancle.png" id="main_cancel"/>
+        </div>
+        <div class="row">
+            <span id="sidebar_name">병관</span>
+        </div>
+    </div>
+    <div class="sidebar_body">
+        <div class="sidebar_row">
+            <img id="side_mypage" src="images/nav_mypage.png"/>
+            <img id="side_point" src="images/nav_point.png"/>
+            <img id="side_coupon" src="images/nav_coupon.png"/>
+            <img id="side_list" src="images/nav_list.png"/>
+        </div>
+        <div class="sidebar_row">
+            <a id="side_mypage_text">나의 정보</a>
+            <a id="side_point_text">포인트</a>
+            <a id="side_coupon_text">쿠 폰</a>
+            <a id="side_list_text">주문 내역</a>
+        </div>
+        <div class="row">
+            <img id="side_share" src="images/nav_share.png"/>
+            <a id="side_share_text">친구초대</a>
+        </div>
+        <div class="row">
+            <img id="side_notice" src="images/nav_notice.png"/>
+            <a id="side_notice_text">공지사항</a>
+        </div>
+        <div class="row">
+            <img id="side_call" src="images/nav_call.png"/>
+            <a id="side_call_text">고객센터</a>
+        </div>
+
+    </div>
+</div>
+
+<!--------------메인 바디-------------->
+<script type="text/javascript" src="cordova.js"></script>
+    <div class="phone-wrapper">
+        <div class="phone-body ">
+            <div class="main ">
+                <div class="head">
+                    <img id="head_menu" src="images/menu.png"/>
+                    <img id="head_title" src="images/main_title.png"/>
+                    <img id="head_order" src="images/main_myshoe.png"/>
+                </div>
+                <div class="item_list">
+                    <div class="row">
+                        <img id="item_girl" src="images/servicepage_woman.png"/>
+                        <img id="item_man" src="images/servicepage_man.png"/>
+                    </div>
+                    <div class="row">
+                        <img id="item_prewoman" src="images/servicepage_prewoman.png"/>
+                        <img id="item_preman" src="images/servicepage_preman.png"/>
+                    </div>
+                    <div class="row">
+                        <img id="item_bag" src="images/servicepage_bag.png"/>
+                        <img id="item_belt" src="images/servicepage_belt.png"/>
+                    </div>
+                    <div class="row">
+                        <img id="item_wallet" src="images/servicepage_wallet.png"/>
+                            <img id="item_etc" src="images/servicepage_etc.png"/>
+                    </div>
+                    <div class="row">
+                        <img id="main_call" src="images/main_call.png"/>
+                    </div>
+                </div>
+                <div class="below">
+                       <b> <div id="pickup_btn">픽업 받을 위치 선택하러 가기</div></b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------Modal 시작--------->
+
+<!--------여성 구두 modal --------->
+    <div id="modal_woman">
+        <h4>숙녀의 구두 수선</h4>
+        <img id="item_woman_shoes" src="images/servicepage_map_woman.png"/>
+        <div class="row_item"><a id="item_woman_subject">서비스를 선택하면 간단한 설명을 보여드립니다.</a></div>
+        <div class="item_woman_item">
+            <div id="item_woman_item1">(현장) <br>상담 후 결제
+                <input id="item_woman_input1" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code1" type="hidden" value="101">
+                <input id="item_woman_cost1" type="hidden" value="0">
+                <input id="item_woman_list1" type="hidden" value="왓슈맨과 상담 후 결정">
+            </div>
+            <div id="item_woman_item2">구두닦이 <br>(5,000원)
+                <input id="item_woman_input2" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code2" type="hidden" value="102">
+                <input id="item_woman_cost2" type="hidden" value="5000">
+                <input id="item_woman_list2" type="hidden" value="오염제거 -> 일반 구두약 도포 ->솔질 및 마무리">
+            </div>
+        </div>
+        <div class="item_woman_item">
+            <div id="item_woman_item3">여자 보조굽(소) <br>(5,000원)
+                <input id="item_woman_input3" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code3" type="hidden" value="103">
+                <input id="item_woman_cost3" type="hidden" value="5000">
+                <input id="item_woman_list3" type="hidden" value="하이힐에 주로 쓰이는 작은 굽 교체">
+            </div>
+            <div id="item_woman_item4">여자 보조굽(중/대) <br>(7,000원)
+                <input id="item_woman_input4" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code4" type="hidden" value="104">
+                <input id="item_woman_cost4" type="hidden" value="7000">
+                <input id="item_woman_list4" type="hidden" value="작은 굽 외 모든 크기의 굽 교체">
+            </div>
+        </div>
+        <div class="item_woman_item">
+            <div id="item_woman_item5">여자 반창덧댐(앞창) <br>(15,000원)
+                <input id="item_woman_input5" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code5" type="hidden" value="105">
+                <input id="item_woman_cost5" type="hidden" value="15000">
+                <input id="item_woman_list5" type="hidden" value="구두의 앞창에 덧대어 손상과 미끄럼 방지">
+            </div>
+            <div id="item_woman_item6">여자 통굽갈이 <br>(15,000원)
+                <input id="item_woman_input6" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code6" type="hidden" value="106">
+                <input id="item_woman_cost6" type="hidden" value="15000">
+                <input id="item_woman_list6" type="hidden" value="굽 위쪽이 길리거나 굽의 통이 빠진 경우 전체 교체">
+            </div>
+        </div>
+        <div class="item_woman_item">
+            <div id="item_woman_item7">부츠케어 <br>(15,000원)
+                <input id="item_woman_input7" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code7" type="hidden" value="107">
+                <input id="item_woman_cost7" type="hidden" value="15000">
+                <input id="item_woman_list7" type="hidden" value="부츠 닦이">
+            </div>
+            <div id="item_woman_item8">전창갈이 <br>(22,000원)
+                <input id="item_woman_input8" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code8" type="hidden" value="108">
+                <input id="item_woman_cost8" type="hidden" value="22000">
+                <input id="item_woman_list8" type="hidden" value="앞창과 뒷굽 전체를 교체">
+            </div>
+        </div>
+        <div class="item_woman_item">
+            <div id="item_woman_item9">일반깔창 <br>(15,000원)
+                <input id="item_woman_input9" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code9" type="hidden" value="109">
+                <input id="item_woman_cost9" type="hidden" value="15000">
+                <input id="item_woman_list9" type="hidden" value="구두 바닥에 맞춰서 깔창 부착">
+            </div>
+            <div id="item_woman_item10">+스타킹 무료배달 <br>(4,000원/BLACK)
+                <input id="item_woman_input10" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code10" type="hidden" value="110">
+                <input id="item_woman_cost10" type="hidden" value="4000">
+                <input id="item_woman_list10" type="hidden" value="서비스 1개 이상 신청시 스타킹 추가">
+            </div>
+        </div>
+        <div class="item_woman_item">
+            <div id="item_woman_item11">+대일밴드 무료배달 <br>(0원)
+                <input id="item_woman_input11" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code11" type="hidden" value="111">
+                <input id="item_woman_cost11" type="hidden" value="0">
+                <input id="item_woman_list11" type="hidden" value="서비스 1개 이상 신청시 대일밴드 무료제공">
+            </div>
+            <div id="item_woman_item12">+담배 무료배달 <br>(현장결제)
+                <input id="item_woman_input12" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code12" type="hidden" value="112">
+                <input id="item_woman_cost12" type="hidden" value="0">
+                <input id="item_woman_list12" type="hidden" value="담배는 연령 확인 후 현장 결제">
+            </div>
+        </div>
+        <div class="item_woman_item">
+            <div id="item_woman_item13">+라이터 무료배달 <br>(100원)
+                <input id="item_woman_input13" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code13" type="hidden" value="113">
+                <input id="item_woman_cost13" type="hidden" value="100">
+                <input id="item_woman_list13" type="hidden" value="서비스 1개 이상 신청시 라이터 배달 가능">
+            </div>
+            <div id="item_woman_item14"><br>
+                <input id="item_woman_input14" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_woman_code14" type="hidden" value="113">
+            </div>
+        </div>
+        <div class="row_item_sum"><a id="item_woman_sum">구두수선 총 금액 : </a><a id="item_woman_cost"></a></div>
+        <button id="confirm_woman_button">확인</button>
+        <button id="woman_close">닫기</button>
+    </div>
+<script type="text/javascript" src="js/main_woman_item.js"></script>
+
+<!--------남성 구두 modal --------->
+    <div id="modal_man">
+        <h4>신사의 구두 수선</h4>
+        <img id="item_man_shoes" src="images/servicepage_map_man.png"/>
+        <div class="row_item"><a id="item_man_subject">서비스를 선택하면 간단한 설명을 보여드립니다.</a></div>
+        <div class="item_man_item">
+            <div id="item_man_item1">(현장)<br> 상담 후 결제
+                <input id="item_man_input1" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code1" type="hidden" value="201">
+                <input id="item_man_cost1" type="hidden" value="0">
+                <input id="item_man_list1" type="hidden" value="왓슈맨과 상담 후 결정">
+            </div>
+            <div id="item_man_item2">구두닦이 <br>(5,000원)
+                <input id="item_man_input2" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code2" type="hidden" value="202">
+                <input id="item_man_cost2" type="hidden" value="5000">
+                <input id="item_man_list2" type="hidden" value="오염제거 -> 일반 구두약 도포 ->솔질 및 마무리">
+            </div>
+        </div>
+        <div class="item_man_item">
+            <div id="item_man_item3">남자 뒷굽갈이<br>(15,000원)
+                <input id="item_man_input3" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code3" type="hidden" value="203">
+                <input id="item_man_cost3" type="hidden" value="15000">
+                <input id="item_man_list3" type="hidden" value="뒷굽이 닳은 경우 비슷한 색으로 교체">
+            </div>
+            <div id="item_man_item4">남자 통굽갈이 <br>(18,000원)
+                <input id="item_man_input4" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code4" type="hidden" value="204">
+                <input id="item_man_cost4" type="hidden" value="18000">
+                <input id="item_man_list4" type="hidden" value="뒷굽 위쪽이 갈린 경우 전체 교체">
+            </div>
+        </div>
+        <div class="item_man_item">
+            <div id="item_man_item5">남자 반창덧댐<br>(15,000원)
+                <input id="item_man_input5" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code5" type="hidden" value="205">
+                <input id="item_man_cost5" type="hidden" value="15000">
+                <input id="item_man_list5" type="hidden" value="구두의 앞창에 덧대어 손상과 미끄럼 방지(일반고무)">
+            </div>
+            <div id="item_man_item6">남자 반창+뒷굽 <br>(29,000원)
+                <input id="item_man_input6" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code6" type="hidden" value="206">
+                <input id="item_man_cost6" type="hidden" value="29000">
+                <input id="item_man_list6" type="hidden" value="구두의 앞창과 뒷굽 교체">
+            </div>
+        </div>
+        <div class="item_man_item">
+            <div id="item_man_item7">남자 반창+통굽 <br>(32,000원)
+                <input id="item_man_input7" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code7" type="hidden" value="207">
+                <input id="item_man_cost7" type="hidden" value="32000">
+                <input id="item_man_list7" type="hidden" value="구두의 앞창과 전체 굽 교체">
+            </div>
+            <div id="item_man_item8">남자 전창갈이 <br>(50,000원)
+                <input id="item_man_input8" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code8" type="hidden" value="208">
+                <input id="item_man_cost8" type="hidden" value="50000">
+                <input id="item_man_list8" type="hidden" value="(우레탄 굽일체형) 구두 바닥 전체 갈이">
+            </div>
+        </div>
+        <div class="item_man_item">
+            <div id="item_man_item9">일반깔창 <br>(15,000원)
+                <input id="item_man_input9" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code9" type="hidden" value="209">
+                <input id="item_man_cost9" type="hidden" value="15000">
+                <input id="item_man_list9" type="hidden" value="구두 바닥에 맞춰서 깔창 부착">
+            </div>
+            <div id="item_man_item10">+ 남자양말 무료배달 <br>(4,000원/BLACK)
+                <input id="item_man_input10" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code10" type="hidden" value="210">
+                <input id="item_man_cost10" type="hidden" value="4000">
+                <input id="item_man_list10" type="hidden" value="서비스 1개 이상 신청시 양말 추가">
+            </div>
+        </div>
+        <div class="item_man_item">
+            <div id="item_man_item11">+ 담배 무료배달 <br>(현장결제)
+                <input id="item_man_input11" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code11" type="hidden" value="211">
+                <input id="item_man_cost11" type="hidden" value="0">
+                <input id="item_man_list11" type="hidden" value="담배는 연령 확인 후 현장 결제">
+            </div>
+            <div id="item_man_item12">+ 라이터 무료배달 <br>(100원)
+                <input id="item_man_input12" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_man_code12" type="hidden" value="212">
+                <input id="item_man_cost12" type="hidden" value="100">
+                <input id="item_man_list12" type="hidden" value="서비스 1개 이상 신청시 라이터 배달 가능">
+            </div>
+        </div>
+        <div class="row_item_sum"><a id="item_man_sum">구두수선 총 금액 : </a><a id="item_man_cost"></a></div>
+        <button id="confirm_man_button">확인</button>
+        <button id="man_close">닫기</button>
+    </div>
+<script type="text/javascript" src="js/main_man_item.js"></script>
+
+<!--------프리미엄 여성 구두 modal --------->
+    <div id="modal_prewoman">
+        <h4>프리미엄 구두 수선</h4>
+        <img id="item_prewoman_shoes" src="images/servicepage_map_woman.png"/>
+        <div class="row_item"><a id="item_prewoman_subject">서비스를 선택하면 간단한 설명을 보여드립니다.</a></div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item1">(현장)<br> 상담 후 결제
+                <input id="item_prewoman_input1" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code1" type="hidden" value="301">
+                <input id="item_prewoman_cost1" type="hidden" value="0">
+                <input id="item_prewoman_list1" type="hidden" value="왓슈맨과 상담 후 결정">
+            </div>
+            <div id="item_prewoman_item2">프리미엄 슈케어 <br>(20,000원)
+                <input id="item_prewoman_input2" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code2" type="hidden" value="302">
+                <input id="item_prewoman_cost2" type="hidden" value="20000">
+                <input id="item_prewoman_list2" type="hidden" value="클렌징 -> 슈크림 도포 ->솔질 및 마무리(사피르 사용)">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item3">프리미엄 슈딥케어 <br>(30,000원)
+                <input id="item_prewoman_input3" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code3" type="hidden" value="303">
+                <input id="item_prewoman_cost3" type="hidden" value="30000">
+                <input id="item_prewoman_list3" type="hidden" value="오염제거 -> 클렌징 -> 슈크림 도포 -> 솔질 및 마무리(사피르 사용)">
+            </div>
+            <div id="item_prewoman_item4">프리미엄 뒷굽갈이(소) <br>(10,000원)
+                <input id="item_prewoman_input4" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code4" type="hidden" value="304">
+                <input id="item_prewoman_cost4" type="hidden" value="10000">
+                <input id="item_prewoman_list4" type="hidden" value="특허 굽으로 갈림이 덜하고 미끄럼 방지가 뛰어난 굽으로 교체">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item5">프리미엄 뒷굽갈이(중) <br>(15,000원)
+                <input id="item_prewoman_input5" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code5" type="hidden" value="305">
+                <input id="item_prewoman_cost5" type="hidden" value="15000">
+                <input id="item_prewoman_list5" type="hidden" value="특허 굽으로 갈림이 덜하고 미끄럼 방지가 뛰어난 굽으로 교체">
+            </div>
+            <div id="item_prewoman_item6">프리미엄 뒷굽갈이(대) <br>(20,000원)
+                <input id="item_prewoman_input6" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code6" type="hidden" value="306">
+                <input id="item_prewoman_cost6" type="hidden" value="20000">
+                <input id="item_prewoman_list6" type="hidden" value="특허 굽으로 갈림이 덜하고 미끄럼 방지가 뛰어난 굽으로 교체">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item7">Vibram 반창갈이 <br>(30,000원)
+                <input id="item_prewoman_input7" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code7" type="hidden" value="307">
+                <input id="item_prewoman_cost7" type="hidden" value="30000">
+                <input id="item_prewoman_list7" type="hidden" value="Vibram 제품(갈림이 덜하고 미끄럼 방지 우수)으로 앞창 덧댐">
+            </div>
+            <div id="item_prewoman_item8">통굽갈이 <br>(30,000원)
+                <input id="item_prewoman_input8" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code8" type="hidden" value="308">
+                <input id="item_prewoman_cost8" type="hidden" value="30000">
+                <input id="item_prewoman_list8" type="hidden" value="굽 위쪽이 갈리거나 굽의 통이 빠진 경우 전체 교체">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item9">밑창수선 <br>(30,000원)
+                <input id="item_prewoman_input9" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code9" type="hidden" value="309">
+                <input id="item_prewoman_cost9" type="hidden" value="30000">
+                <input id="item_prewoman_list9" type="hidden" value="밑창 떨어짐 및 손상 수선">
+            </div>
+            <div id="item_prewoman_item10">프리미엄 힐 가죽교체 <br>(40,000원)
+                <input id="item_prewoman_input10" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code10" type="hidden" value="310">
+                <input id="item_prewoman_cost10" type="hidden" value="40000">
+                <input id="item_prewoman_list10" type="hidden" value="뒷굽 외 까진 부분 동일한 가죽으로 덧댐">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item11">부츠케어(+슈케어) <br>(35,000원)
+                <input id="item_prewoman_input11" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code11" type="hidden" value="311">
+                <input id="item_prewoman_cost11" type="hidden" value="35000">
+                <input id="item_prewoman_list11" type="hidden" value="부츠 슈케어(까진부분, 주름, 변색 복원)">
+            </div>
+            <div id="item_prewoman_item12">앞코 까진부분 염색 <br>(35,000원)
+                <input id="item_prewoman_input12" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code12" type="hidden" value="312">
+                <input id="item_prewoman_cost12" type="hidden" value="35000">
+                <input id="item_prewoman_list12" type="hidden" value="구두 앞코의 까진 부분 동일한 색으로 염색">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item13">앞코 모양변형 <br>(110,000원)
+                <input id="item_prewoman_input13" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code13" type="hidden" value="313">
+                <input id="item_prewoman_cost13" type="hidden" value="110000">
+                <input id="item_prewoman_list13" type="hidden" value="원하는 형태로 앞코의 디자인 변형">
+            </div>
+            <div id="item_prewoman_item14">염색 <br>(130,000원)
+                <input id="item_prewoman_input14" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code14" type="hidden" value="314">
+                <input id="item_prewoman_cost14" type="hidden" value="130000">
+                <input id="item_prewoman_list14" type="hidden" value="변색, 오염이 심한 경우 전체 컬러 염색">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item15">힐줄이기 <br>(20,000원)
+                <input id="item_prewoman_input15" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code15" type="hidden" value="315">
+                <input id="item_prewoman_cost15" type="hidden" value="20000">
+                <input id="item_prewoman_list15" type="hidden" value="힐 높이 조절">
+            </div>
+            <div id="item_prewoman_item16">사이즈 줄임 <br>(35,000원)
+                <input id="item_prewoman_input16" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code16" type="hidden" value="316">
+                \<input id="item_prewoman_cost16" type="hidden" value="35000">
+                <input id="item_prewoman_list16" type="hidden" value="구두 한 사이즈 줄임">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item17">깔창교체 <br>(30,000원)
+                <input id="item_prewoman_input17" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code17" type="hidden" value="315">
+                <input id="item_prewoman_cost17" type="hidden" value="30000">
+                <input id="item_prewoman_list17" type="hidden" value="구두 안쪽의 창 동일한 소재와 크기로 교체">
+            </div>
+            <div id="item_prewoman_item18">부츠 통 늘림 <br>(20,000원)
+                <input id="item_prewoman_input18" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code18" type="hidden" value="318">
+                <input id="item_prewoman_cost18" type="hidden" value="20000">
+                <input id="item_prewoman_list18" type="hidden" value="부츠의 통 부분을 늘임">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item19">부츠 통 줄임 <br>(85,000원)
+                <input id="item_prewoman_input19" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code19" type="hidden" value="319">
+                <input id="item_prewoman_cost19" type="hidden" value="85000">
+                <input id="item_prewoman_list19" type="hidden" value="부츠의 통 부분을 줄임">
+            </div>
+            <div id="item_prewoman_item20">부츠지퍼교체 <br>(130,000원)
+                <input id="item_prewoman_input20" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code20" type="hidden" value="320">
+                <input id="item_prewoman_cost20" type="hidden" value="130000">
+                <input id="item_prewoman_list20" type="hidden" value="지퍼가 망가진 경우 교체">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item21">부츠지퍼플러교체 <br>(25,000원)
+                <input id="item_prewoman_input21" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code21" type="hidden" value="321">
+                <input id="item_prewoman_cost21" type="hidden" value="25000">
+                <input id="item_prewoman_list21" type="hidden" value="지퍼의 손잡이 부분만 교체">
+            </div>
+            <div id="item_prewoman_item22">+스타킹 무료배달 <br>(4,000원/BLACK)
+                <input id="item_prewoman_input22" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code22" type="hidden" value="322">
+                <input id="item_prewoman_cost22" type="hidden" value="4000">
+                <input id="item_prewoman_list22" type="hidden" value="서비스 1개 이상 신청시 스타킹 추가">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item23">+담배 무료 배달 <br>(현장결제)
+                <input id="item_prewoman_input23" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code23" type="hidden" value="323">
+                <input id="item_prewoman_cost23" type="hidden" value="0">
+                <input id="item_prewoman_list23" type="hidden" value="담배는 연령 확인 후 현장 결제">
+            </div>
+            <div id="item_prewoman_item24">라이터 무료배달 <br>(100원)
+                <input id="item_prewoman_input24" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code24" type="hidden" value="324">
+                <input id="item_prewoman_cost24" type="hidden" value="100">
+                <input id="item_prewoman_list24" type="hidden" value="서비스 1개 이상 신청시 라이터 배달 가능">
+            </div>
+        </div>
+        <div class="item_prewoman_item">
+            <div id="item_prewoman_item25">대일밴드 무료배달 <br>(0원)
+                <input id="item_prewoman_input25" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code25" type="hidden" value="325">
+                <input id="item_prewoman_cost25" type="hidden" value="0">
+                <input id="item_prewoman_list25" type="hidden" value="서비스 1개 이상 신청시 대일밴드 추가">
+            </div>
+            <div id="item_prewoman_item26">
+                <input id="item_prewoman_input26" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_prewoman_code26" type="hidden" value="326">
+                <input id="item_prewoman_cost26" type="hidden" value="0">
+            </div>
+        </div>
+        <div class="row_item_sum"><a id="item_prewoman_sum">구두수선 총 금액 : </a><a id="item_prewoman_cost"></a></div>
+        <button id="confirm_prewoman_button">확인</button>
+        <button id="prewoman_close">닫기</button>
+    </div>
+<script type="text/javascript" src="js/main_prewoman_item.js"></script>
+
+<!--------프리미엄 남성 구두 modal --------->
+    <div id="modal_preman">
+        <h4>프리미엄 구두 수선</h4>
+        <img id="item_preman_shoes" src="images/servicepage_map_man.png"/>
+        <div class="row_item"><a id="item_preman_subject">서비스를 선택하면 간단한 설명을 보여드립니다.</a></div>
+        <div class="item_preman_item">
+            <div id="item_preman_item1">(현장)<br> 상담 후 결제
+                <input id="item_preman_input1" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code1" type="hidden" value="401">
+                <input id="item_preman_cost1" type="hidden" value="0">
+                <input id="item_preman_list1" type="hidden" value="왓슈맨과 상담 후 결정">
+            </div>
+            <div id="item_preman_item2">프리미엄 슈케어 <br>(20,000원)
+                <input id="item_preman_input2" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code2" type="hidden" value="402">
+                <input id="item_preman_cost2" type="hidden" value="20000">
+                <input id="item_preman_list2" type="hidden" value="클렌징 -> 슈크림 도포 ->솔질 및 마무리(사피르 사용)">
+            </div>
+        </div>
+        <div class="item_preman_item">
+            <div id="item_preman_item3">프리미엄 슈딥케어 <br>(30,000원)
+                <input id="item_preman_input3" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code3" type="hidden" value="403">
+                <input id="item_preman_cost3" type="hidden" value="30000">
+                <input id="item_preman_list3" type="hidden" value="오염제거 -> 클렌징 -> 슈크림 도포 -> 솔질 및 마무리(사피르 사용)">
+            </div>
+            <div id="item_preman_item4">Vibram 뒷굽갈이 <br>(40,000원)
+                <input id="item_preman_input4" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code4" type="hidden" value="404">
+                <input id="item_preman_cost4" type="hidden" value="40000">
+                <input id="item_preman_list4" type="hidden" value="Vibram 제품(갈림이 덜하고 미끄럼 방지 우수)으로 뒷굽 교체">
+            </div>
+        </div>
+        <div class="item_preman_item">
+            <div id="item_preman_item5">Vibram 반창갈이 <br>(40,000원)
+                <input id="item_preman_input5" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code5" type="hidden" value="405">
+                <input id="item_preman_cost5" type="hidden" value="40000">
+                <input id="item_preman_list5" type="hidden" value="Vibram 제품(갈림이 덜하고 미끄럼 방지 우수)으로 앞창 덧댐">
+            </div>
+            <div id="item_preman_item6">밑창수선 <br>(30,000원)
+                <input id="item_preman_input6" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code6" type="hidden" value="406">
+                <input id="item_preman_cost6" type="hidden" value="30000">
+                <input id="item_preman_list6" type="hidden" value="밑창 떨어짐 및 손상 수선">
+            </div>
+        </div>
+        <div class="item_preman_item">
+            <div id="item_preman_item7">전창갈이+슈케어 <br>(60,000원)
+                <input id="item_preman_input7" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code7" type="hidden" value="407">
+                <input id="item_preman_cost7" type="hidden" value="60000">
+                <input id="item_preman_list7" type="hidden" value="앞창덧댐과 뒷굽 교체 및 슈케어">
+            </div>
+            <div id="item_preman_item8">Vibram 전창갈이 <br>(158,000원)
+                <input id="item_preman_input8" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code8" type="hidden" value="408">
+                <input id="item_preman_cost8" type="hidden" value="158000">
+                <input id="item_preman_list8" type="hidden" value="Vibram 제품(갈리밍 덜하고 미끄럼 방지 우수)으로 전체 창 교체">
+            </div>
+        </div>
+        <div class="item_preman_item">
+            <div id="item_preman_item9">앞코 까진부분 염색 <br>(35,000원)
+                <input id="item_preman_input9" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code9" type="hidden" value="409">
+                <input id="item_preman_cost9" type="hidden" value="35000">
+                <input id="item_preman_list9" type="hidden" value="구두 앞코의 까진 부분 동일한 색으로 염색">
+            </div>
+            <div id="item_preman_item10">앞코 모양변형<br>(110,000원)
+                <input id="item_preman_input10" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code10" type="hidden" value="410">
+                <input id="item_preman_cost10" type="hidden" value="110000">
+                <input id="item_preman_list10" type="hidden" value="원하는 형태로 앞코의 디자인 변형">
+            </div>
+        </div>
+        <div class="item_preman_item">
+            <div id="item_preman_item11">염색 <br>(130,000원)
+                <input id="item_preman_input11" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code11" type="hidden" value="411">
+                <input id="item_preman_cost11" type="hidden" value="130000">
+                <input id="item_preman_list11" type="hidden" value="변색, 오염이 심한 경우 전체 컬러 염색">
+            </div>
+            <div id="item_preman_item12">사이즈 줄임<br>(35,000원)
+                <input id="item_preman_input12" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code12" type="hidden" value="412">
+                <input id="item_preman_cost12" type="hidden" value="35000">
+                <input id="item_preman_list12" type="hidden" value="구두 한 사이즈 줄임">
+            </div>
+        </div>
+        <div class="item_preman_item">
+            <div id="item_preman_item13">깔창교체 <br>(30,000원)
+                <input id="item_preman_input13" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code13" type="hidden" value="413">
+                <input id="item_preman_cost13" type="hidden" value="30000">
+                <input id="item_preman_list13" type="hidden" value="구두 안쪽의 창 동일한 소재와 크기로 교체">
+            </div>
+            <div id="item_preman_item14">+남자양말 무료배달 <br>(4,000원/BLACK)
+                <input id="item_preman_input14" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code14" type="hidden" value="414">
+                <input id="item_preman_cost14" type="hidden" value="4000">
+                <input id="item_preman_list14" type="hidden" value="서비스 1개 이상 신청시 양말 추가">
+            </div>
+        </div>
+        <div class="item_preman_item">
+            <div id="item_preman_item15">+담배 무료 배달 <br>(현장결제)
+                <input id="item_preman_input15" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code15" type="hidden" value="415">
+                <input id="item_preman_cost15" type="hidden" value="0">
+                <input id="item_preman_list15" type="hidden" value="담배는 연령 확인 후 현장 결제">
+            </div>
+            <div id="item_preman_item16">라이터 무료배달 <br>(100원)
+                <input id="item_preman_input16" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_preman_code16" type="hidden" value="416">
+                <input id="item_preman_cost16" type="hidden" value="100">
+                <input id="item_preman_list16" type="hidden" value="서비스 1개 이상 신청시 라이터 배달 가능">
+            </div>
+        </div>
+        <div class="row_item_sum"><a id="item_preman_sum">구두수선 총 금액 : </a><a id="item_preman_cost"></a></div>
+        <button id="confirm_preman_button">확인</button>
+        <button id="preman_close">닫기</button>
+    </div>
+<script type="text/javascript" src="js/main_preman_item.js"></script>
+
+<!--------명품 가방 수선 modal --------->
+    <div id="modal_bag">
+        <h4>명품 가방 수선</h4>
+        <img id="item_bag_service" src="images/servicepage_map_bag.png"/>
+        <div class="row_item"><a id="item_bag_subject">서비스를 선택하면 간단한 설명을 보여드립니다.</a></div>
+        <div class="item_bag_item">
+            <div id="item_bag_item1">(현장)<br> 상담 후 결제
+                <input id="item_bag_input1" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code1" type="hidden" value="501">
+                <input id="item_bag_cost1" type="hidden" value="0">
+                <input id="item_bag_list1" type="hidden" value="왓슈맨과 상담 후 결정">
+            </div>
+            <div id="item_bag_item2">바디염색<br>(270,000원~320,000원)
+                <input id="item_bag_input2" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code2" type="hidden" value="502">
+                <input id="item_bag_cost2" type="hidden" value="270000">
+                <input id="item_bag_list2" type="hidden" value="변색, 오염의 경우 전체 컬러 염색">
+            </div>
+        </div>
+        <div class="item_bag_item">
+            <div id="item_bag_item3">핸들 고리 교체<br>(35,000원~45,000원)
+                <input id="item_bag_input3" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code3" type="hidden" value="503">
+                <input id="item_bag_cost3" type="hidden" value="35000">
+                <input id="item_bag_list3" type="hidden" value="본체와 손잡이 연결부분 교체">
+            </div>
+            <div id="item_bag_item4">핸들 박음질<br>(25,000원~)
+                <input id="item_bag_input4" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code4" type="hidden" value="504">
+                <input id="item_bag_cost4" type="hidden" value="25000">
+                <input id="item_bag_list4" type="hidden" value="본체와 손잡이 연결부분 박음질">
+            </div>
+        </div>
+        <div class="item_bag_item">
+            <div id="item_bag_item5">핸들 유약칠 <br>(45,000원~55,000원)
+                <input id="item_bag_input5" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code5" type="hidden" value="505">
+                <input id="item_bag_cost5" type="hidden" value="45000">
+                <input id="item_bag_list5" type="hidden" value="가죽 테두리 부분에 유약을 발라 마무리">
+            </div>
+            <div id="item_bag_item6">핸들 제작 <br>(상담 후 결정)
+                <input id="item_bag_input6" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code6" type="hidden" value="506">
+                <input id="item_bag_cost6" type="hidden" value="0">
+                <input id="item_bag_list6" type="hidden" value="동일가죽으로 제작(디자인 문의 가능)">
+            </div>
+        </div>
+        <div class="item_bag_item">
+            <div id="item_bag_item7">가방 테두리 파이핑 <br>(120,000원~130,000원)
+                <input id="item_bag_input7" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code7" type="hidden" value="507">
+                <input id="item_bag_cost7" type="hidden" value="120000">
+                <input id="item_bag_list7" type="hidden" value="바디의 테두리를 두른 파이핑 다시 말아 넣거나 새로 제작하여 박음질">
+            </div>
+            <div id="item_bag_item8">지퍼 손잡이 <br>(30,000원~35,000원)
+                <input id="item_bag_input8" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code8" type="hidden" value="508">
+                <input id="item_bag_cost8" type="hidden" value="30000">
+                <input id="item_bag_list8" type="hidden" value="가방지퍼의 손잡이 교체">
+            </div>
+        </div>
+        <div class="item_bag_item">
+            <div id="item_bag_item9">지퍼 전체 교체<br>(90,000원~110,000원)
+                <input id="item_bag_input9" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code9" type="hidden" value="509">
+                <input id="item_bag_cost9" type="hidden" value="90000">
+                <input id="item_bag_list9" type="hidden" value="가방의 전체 지퍼 교체">
+            </div>
+            <div id="item_bag_item10">안감교체<br>(120,000원~130,000원)
+                <input id="item_bag_input10" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code10" type="hidden" value="510">
+                <input id="item_bag_cost10" type="hidden" value="120000">
+                <input id="item_bag_list10" type="hidden" value="가방 안감을 뜯어내고 새것으로 교체">
+            </div>
+        </div>
+        <div class="item_bag_item">
+            <div id="item_bag_item11">모서리가죽패치<br>(35,000원~)
+                <input id="item_bag_input11" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code11" type="hidden" value="511">
+                <input id="item_bag_cost11" type="hidden" value="35000">
+                <input id="item_bag_list11" type="hidden" value="가방 모서리의 가죽패치 교체">
+            </div>
+            <div id="item_bag_item12">바닥 찡<br>(35,000원~45,000원)
+                <input id="item_bag_input12" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_bag_code12" type="hidden" value="512">
+                <input id="item_bag_cost12" type="hidden" value="35000">
+                <input id="item_bag_list12" type="hidden" value="가방 하단의 찡 교체">
+            </div>
+        </div>
+        <div class="row"><a id="item_bag_sum">구두수선 총 금액 : </a><a id="item_bag_cost"></a></div>
+        <button id="confirm_bag_button">확인</button>
+        <button id="bag_close">닫기</button>
+    </div>
+<script type="text/javascript" src="js/main_bag_item.js"></script>
+
+<!--------명품 벨트 수선 modal --------->
+    <div id="modal_belt">
+        <h4>명품 벨트 수선</h4>
+        <img id="item_belt_service" src="images/servicepage_map_belt.png"/>
+        <div class="row_item"><a id="item_belt_subject">서비스를 선택하면 간단한 설명을 보여드립니다.</a></div>
+        <div class="item_belt_item">
+            <div id="item_belt_item1">(현장)<br> 상담 후 결제
+                <input id="item_belt_input1" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code1" type="hidden" value="601">
+                <input id="item_belt_cost1" type="hidden" value="0">
+                <input id="item_belt_list1" type="hidden" value="왓슈맨과 상담 후 결정">
+            </div>
+            <div id="item_belt_item2">벨트 줄 가죽제작<br>(100,000원~130,000원)
+                <input id="item_belt_input2" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code2" type="hidden" value="602">
+                <input id="item_belt_cost2" type="hidden" value="1000000">
+                <input id="item_belt_list2" type="hidden" value="벨트 줄을 동일한 가죽으로 제작">
+            </div>
+        </div>
+        <div class="item_belt_item">
+            <div id="item_belt_item3">벨트 고리 제작<br>(20,000원~25,000원)
+                <input id="item_belt_input3" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code3" type="hidden" value="603">
+                <input id="item_belt_cost3" type="hidden" value="20000">
+                <input id="item_belt_list3" type="hidden" value="벨트 줄을 고정하는 가죽 고리 제작">
+            </div>
+            <div id="item_belt_item4">버클도금(M)<br>(30,000원~35,000원)
+                <input id="item_belt_input4" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code4" type="hidden" value="604">
+                <input id="item_belt_cost4" type="hidden" value="30000">
+                <input id="item_belt_list4" type="hidden" value="녹슬거나 색이 변한 버클에 색을 새로 입힘">
+            </div>
+        </div>
+        <div class="item_belt_item">
+            <div id="item_belt_item5">버클도금(L)<br>(55,000원~65,000원)
+                <input id="item_belt_input5" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code5" type="hidden" value="605">
+                <input id="item_belt_cost5" type="hidden" value="55000">
+                <input id="item_belt_list5" type="hidden" value="녹슬거나 색이 변한 버클에 색을 새로 입힘">
+            </div>
+            <div id="item_belt_item6">버클도금(특수)<br>(120,000원,130,000원)
+                <input id="item_belt_input6" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code6" type="hidden" value="606">
+                <input id="item_belt_cost6" type="hidden" value="120000">
+                <input id="item_belt_list6" type="hidden" value="녹슬거나 색이 변한 버클에 색을 새로 입힘">
+            </div>
+        </div>
+        <div class="item_belt_item">
+            <div id="item_belt_item7">박음질, 유약칠<br>(55,000원~65,000원)
+                <input id="item_belt_input7" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code7" type="hidden" value="607">
+                <input id="item_belt_cost7" type="hidden" value="55000">
+                <input id="item_belt_list7" type="hidden" value="실밥이 풀어지거나 갖구이 갈라져 뜯긴 경우 박음질">
+            </div>
+            <div id="item_belt_item8">
+                <input id="item_belt_input8" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_belt_code8" type="hidden" value="608">
+                <input id="item_belt_cost8" type="hidden" value="30000">
+            </div>
+        </div>
+        <div class="row_item_sum"><a id="item_belt_sum">구두수선 총 금액 : </a><a id="item_belt_cost"></a></div>
+        <button id="confirm_belt_button">확인</button>
+        <button id="belt_close">닫기</button>
+    </div>
+<script type="text/javascript" src="js/main_belt_item.js"></script>
+
+<!--------명품 지갑 수선 modal --------->
+    <div id="modal_wallet">
+        <h4>명품 지갑 수선</h4>
+        <img id="item_wallet_service" src="images/servicepage_map_wallet.png"/>
+        <div class="row_item"><a id="item_wallet_subject">서비스를 선택하면 간단한 설명을 보여드립니다.</a></div>
+        <div class="item_wallet_item">
+            <div id="item_wallet_item1">(현장)<br> 상담 후 결제
+                <input id="item_wallet_input1" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code1" type="hidden" value="701">
+                <input id="item_wallet_cost1" type="hidden" value="0">
+                <input id="item_wallet_list1" type="hidden" value="왓슈맨과 상담 후 결정">
+            </div>
+            <div id="item_wallet_item2">바디 유약칠<br>(55,000원~65,000원)
+                <input id="item_wallet_input2" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code2" type="hidden" value="702">
+                <input id="item_wallet_cost2" type="hidden" value="55000">
+                <input id="item_wallet_list2" type="hidden" value="지갑의 끝 부분 전체 칠">
+            </div>
+        </div>
+        <div class="item_wallet_item">
+            <div id="item_wallet_item3">바디 박음질<br>(30,000원~35,000원)
+                <input id="item_wallet_input3" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code3" type="hidden" value="703">
+                <input id="item_wallet_cost3" type="hidden" value="30000">
+                <input id="item_wallet_list3" type="hidden" value="바느질 풀림시 박음질">
+            </div>
+            <div id="item_wallet_item4">바디 염색<br>(100,000원~130,000원)
+                <input id="item_wallet_input4" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code4" type="hidden" value="704">
+                <input id="item_wallet_cost4" type="hidden" value="100000">
+                <input id="item_wallet_list4" type="hidden" value="바디가 변색, 오염 된 경우 전체 컬러 염색">
+            </div>
+        </div>
+        <div class="item_wallet_item">
+            <div id="item_wallet_item5">바디 클리닝<br>(40,000원~45,000원)
+                <input id="item_wallet_input5" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code5" type="hidden" value="705">
+                <input id="item_wallet_cost5" type="hidden" value="40000">
+                <input id="item_wallet_list5" type="hidden" value="세탁 후 무두질, 영양공급">
+            </div>
+            <div id="item_wallet_item6">색상보완<br>(45,000원~55,000원)
+                <input id="item_wallet_input6" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code6" type="hidden" value="706">
+                <input id="item_wallet_cost6" type="hidden" value="45000">
+                <input id="item_wallet_list6" type="hidden" value="오염이나 이염된 부분만 동일한 색으로 염색">
+            </div>
+        </div>
+        <div class="item_wallet_item">
+            <div id="item_wallet_item7">안감교체<br>(100,000원~130,000원)
+                <input id="item_wallet_input7" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code7" type="hidden" value="707">
+                <input id="item_wallet_cost7" type="hidden" value="100000">
+                <input id="item_wallet_list7" type="hidden" value="안감전체를 교체(재료별 상이)">
+            </div>
+            <div id="item_wallet_item8">안감지퍼교체<br>(50,000원~55,000원)
+                <input id="item_wallet_input8" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code8" type="hidden" value="708">
+                <input id="item_wallet_cost8" type="hidden" value="50000">
+                <input id="item_wallet_list8" type="hidden" value="안쪽 지퍼 전체를 교체">
+            </div>
+        </div>
+        <div class="item_wallet_item">
+            <div id="item_wallet_item9">안감스탭교체<br>(20,000원~25,000원)
+                <input id="item_wallet_input9" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code9" type="hidden" value="709">
+                <input id="item_wallet_cost9" type="hidden" value="20000">
+                <input id="item_wallet_list9" type="hidden" value="지갑 여닫는 부분, 똑딱이 류 교체">
+            </div>
+            <div id="item_wallet_item10">
+                <input id="item_wallet_input10" type="checkbox" value="NULL" style="display: none;">
+                <input id="item_wallet_code10" type="hidden" value="709">
+                <input id="item_wallet_cost10" type="hidden" value="">
+                <input id="item_wallet_list10" type="hidden" value="">
+            </div>
+        </div>
+        <div class="row_item_sum"><a id="item_wallet_sum">구두수선 총 금액 : </a><a id="item_wallet_cost"></a></div>
+        <button id="confirm_wallet_button">확인</button>
+        <button id="wallet_close">닫기</button>
+    </div>
+<script type="text/javascript" src="js/main_wallet_item.js"></script>
+<!--------기타--------->
+    <div id="etc">
+
+    </div>
+<script type="text/javascript" src="js/client_Info.js"></script>
+<script type="text/javascript" src="js/main_slidebar.js"></script>
+<script type="text/javascript" src="js/main_item.js"></script>
+<script type="text/javascript" src="js/main_modal.js"></script>
+<script type="text/javascript" src="js/main_move.js"></script>
+
+</body>
+</html>

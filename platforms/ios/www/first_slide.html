@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/start_slide.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<!------------swipe slider--------------->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img id="page1" src="images/page2.png"></div>
+                <div class="swiper-slide"><img id="page2" src="images/page3.png"></div>
+                <div class="swiper-slide"><img id="page3" src="images/page4.png"></div>
+                <div class="swiper-slide"><img id="page4" src="images/page5.png"></div>
+                <div class="swiper-slide"><img id="page5" src="images/page6.png"></div>
+                <div class="swiper-slide"><img id="page6" src="images/page7.png"></div>
+                <div class="swiper-slide" id="login_html">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+           <!--- <div class="swiper-pagination"></div>  -->
+        </div>
+<script src="js/swiper.min.js"></script>
+<script>
+    //마지막 슬라이드는 로그인 화면
+    $(document).ready(function(){
+        $("#login_html").load("login.html");
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+</body>
+<script type="application/javascript" src="js/client_Info.js"></script>
+<script type="application/javascript" src="js/login_check.js"></script>
+</html>

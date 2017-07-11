@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wallet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>701</code>
+		<content>상담 후 결제</content>
+	</service>
+	<service>
+		<code>702</code>
+		<content>벨트 줄 가죽제작</content>
+	</service>
+	<service>
+		<code>703</code>
+		<content>벨트 고리 제작</content>
+	</service>
+	<service>
+		<code>704</code>
+		<content>버클도금(M)</content>
+	</service>
+	<service>
+		<code>705</code>
+		<content>버클도금(L)</content>
+	</service>
+	<service>
+		<code>706</code>
+		<content>버클도금(특수)</content>
+	</service>
+	<service>
+		<code>707</code>
+		<content>박음질, 유약칠</content>
+	</service>
+</wallet>
